@@ -1,0 +1,56 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-在线预约-宾客迎送-成功</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap online_bk_top">
+    <p>鲁能山海天·海石滩贰号<br>3-5-2109</p>
+</div>
+<div class="online_bk_btn">
+    <a class="ow">我是业主</a>
+    <a class="cs">我是宾客</a>
+</div>
+<div class="wrap tg_online_box">
+    <a>
+        <label>姓名</label>
+        <input class="inp" type="text" placeholder="请填写联系人姓名">
+    </a>
+    <a>
+        <label>手机号</label>
+        <input class="inp" type="text" placeholder="请填写联系人手机号">
+    </a>
+    <a>
+        <label>入住时间</label>
+        <em>2017.12.01</em>
+    </a>
+    <a>
+        <label>离店时间</label>
+        <em>2017.12.01</em>
+    </a>
+</div>
+<div class="order_float">
+    <div class="order_float_left">
+        <span class="total">总价：<em>￥<i>88.00</i></em></span>
+    </div>
+    <a class="submit">提交订单</a>
+</div>
+<div class="dialog ">
+    <div class="dialog_box">
+        <span class="ico_success"></span>
+        <h2>提交成功</h2>
+        <p>自在管家会在30分钟内联系您，<br>请保持电话畅通！</p>
+        <div class="dialog_btn">
+            <a class="close">我知道啦</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

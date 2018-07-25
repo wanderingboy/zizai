@@ -1,0 +1,193 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>筛选</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/dhtmlx.js"></script>
+</head>
+<body>
+<!-- 筛选条件 -->
+<script>
+        var mySlider,i=0;
+        
+        function doOnLoad(){
+            mySlider = new dhtmlXSlider({
+                parent: "sliderObj",
+                //linkTo: ["sliderLink", "sliderLink2"],
+                step: 2,
+                min: 0,
+                max: 100,
+                value: [20,40],
+                range: true
+            });
+
+            mySlider.attachEvent("onChange", function(value){
+                setNoteToLog({
+                    eventNme: "onChange",
+                    arg: [value]
+                });
+            });
+            
+            mySlider.attachEvent("onSlideEnd", function(value){
+                setNoteToLog({
+                    eventNme: "onSlideEnd",
+                    arg: [value]
+                });
+            });
+
+        };
+        
+        function doOnUnload(){
+            if (mySlider != null){
+                mySlider.unload();
+                mySlider = null;
+            }
+        };
+
+        function setNoteToLog(data) {
+            var a = data.arg[0][0];
+            var b = data.arg[0][1];
+
+            a_index  = 1;
+
+            if(a <= 0){
+                a_index =0;
+            }
+            if(a >0 && a<=20){
+                a_index = 1;
+            }
+
+            if(a >20 && a<=40){
+                a_index = 2;
+            }
+            if(a >40 && a<=60){
+                a_index = 3;
+            }
+            if(a >60 && a<=80){
+                a_index = 4;
+            }
+            if(a >80 ){
+                a_index = 5;
+            }
+
+            b_index  = 2;
+
+            if(b <= 0){
+                b_index =0;
+            }
+            if(b >0 && b<=20){
+                b_index = 1;
+            }
+
+            if(b >20 && b<=40){
+                b_index = 2;
+            }
+            if(b >40 && b<=60){
+                b_index = 3;
+            }
+            if(b >60 && b<=80){
+                b_index = 4;
+            }
+            if(b >80 ){
+                b_index = 5;
+            }
+
+             $(".sx_st_label li").removeClass("on");
+             $(".sx_st_label li").eq(a_index).addClass("on");
+             $(".sx_st_label li").eq(b_index).addClass("on");
+           
+            
+            // cont.innerHTML = "<div>"+ (++i)+") "+data.eventNme+" -- arguments: ["+data.arg.join(", ")+"]"+"</div>"+cont.innerHTML;
+        };
+    </script>
+
+<div class="wrap sx_box1">
+    <div class="title">每晚价格</div>
+    <div class="sx_stage">
+        <div id="sliderObj"></div>
+        <ul class="sx_st_label">
+            <li>
+                <p>￥300</p>
+            </li>
+            <li class="on">
+                <p>￥800</p>
+            </li>
+            <li class="on">  
+                <p>￥1000</p>
+            </li>
+            <li left="3.8" width="3.8">              
+                <p>￥1500</p>
+            </li>
+            <li left="5.2" width="5.2">              
+                <p>￥3000</p>
+            </li>
+            <li left="6.32" width="6.32">              
+                <p>不限</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="wrap sx_box2">
+    <div class="title">居室</div>
+    <div class="sx_lab_box">
+        <span class="on">一居</span>
+        <span>二居</span>
+        <span>三居</span>
+        <span>四居及以上</span>
+    </div>
+</div>
+<div class="wrap sx_box3">
+    <div class="sx_box3_list" id="person">
+        <label>人数</label>
+        <div class="count">
+            <a class="cut default"></a>
+            <em>1</em>
+            <a class="add"></a>
+        </div>
+    </div>
+    <div class="sx_box3_list" id="bed">
+        <label>床数</label>
+        <div class="count">
+            <a class="cut"></a>
+            <em>3</em>
+            <a class="add"></a>
+        </div>
+    </div>
+</div>
+<div class="wrap sx_box4">
+    <div class="title">房型</div>
+    <div class="sx_lab_box">
+        <span class="on">酒店式公寓</span>
+        <span>别墅</span>
+        <span>民居</span>
+        <span>四合院</span>
+    </div>
+</div>
+<div class="sx_float">
+    <a class="reset">重置</a>
+    <a class="submit">确定查看</a>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    doOnLoad();
+    // $(".sx_st_label li").bind("click",function(){
+    //     var first =  $(".sx_st_label li.on").eq(0).index();
+    //      var second =  $(".sx_st_label li.on").eq(1).index();
+    //      console.log(first);
+    //      console.log(second);
+    //      var this = $(this).index();
+         
+
+
+    // });
+});
+</script>
+</body>
+</html>

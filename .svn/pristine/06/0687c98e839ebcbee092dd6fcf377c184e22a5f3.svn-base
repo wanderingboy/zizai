@@ -1,0 +1,206 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>设施服务</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_detail.css">
+    <link rel="stylesheet" href="../css/sheshi.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap fang_sheshi">
+    <h2>居家</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_1"></span>
+                <p>电视</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_2"></span>
+                <p>冰箱</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_3"></span>
+                <p>洗衣机</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_4"></span>
+                <p>无线网络</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_5"></span>
+                <p>空调</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_6"></span>
+                <p>拖鞋</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_7"></span>
+                <p>电熨斗</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_8"></span>
+                <p>电吹风</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_9"></span>
+                <p>晾衣架</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_10"></span>
+                <p>打扫工具</p>
+            </div>
+        </div>
+    </div>
+    <h2>洗漱用品</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_11"></span>
+                <p>独立卫浴</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_12"></span>
+                <p>洗发水</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_13"></span>
+                <p>牙具</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_14"></span>
+                <p>毛巾</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_15"></span>
+                <p>沐浴露</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_16"></span>
+                <p>香皂/洗手液</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_17"></span>
+                <p>卫生纸</p>
+            </div>
+        </div>
+    </div>
+    <h2>餐厨</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_18"></span>
+                <p>锅具</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_19"></span>
+                <p>餐具</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_20"></span>
+                <p>燃气灶</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_21"></span>
+                <p>洗涤用具</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_22"></span>
+                <p>电饭煲</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_23"></span>
+                <p>道具菜板</p>
+            </div>
+        </div>
+    </div>
+    <h2>安全</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_24"></span>
+                <p>保安</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_25"></span>
+                <p>门禁系统</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_26"></span>
+                <p>火灾报警器</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_27"></span>
+                <p>智能门锁</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_28"></span>
+                <p>灭火器</p>
+            </div>
+        </div>
+    </div>
+    <h2>建筑</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_29"></span>
+                <p>有窗户</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_30"></span>
+                <p>电梯</p>
+            </div>
+        </div>
+    </div>
+    <h2>周边（500米内）</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_31"></span>
+                <p>超市</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_32"></span>
+                <p>银行</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_33"></span>
+                <p>药店</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_34"></span>
+                <p>餐厅</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_35"></span>
+                <p>免费停车</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_36"></span>
+                <p>泳池</p>
+            </div>
+            <div class="fang_ss_list">
+                <span class="ico_37"></span>
+                <p>公园</p>
+            </div>
+        </div>
+    </div>
+    <h2>其他</h2>
+    <div class="fang_ss_box">
+        <div class="fang_ss_box_div">
+            <div class="fang_ss_list on">
+                <span class="ico_38"></span>
+                <p>行李寄存</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

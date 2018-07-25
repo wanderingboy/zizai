@@ -1,0 +1,377 @@
+/*
+* 房屋详情
+* 张展
+* 2018-1-17
+*/
+
+/* page 房屋详情 */
+/* banner */
+.banner{
+    width:100%;
+    height: 4.2rem;
+    overflow:hidden;
+    position: relative;
+}
+.slider_item {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+.slider_item li {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slider_item li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.slider_page{
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.5rem;
+    color: #fff;
+    font-size: 0.2rem;
+    z-index: 3;
+}
+.slider_page span{
+    font-size: 0.32rem;
+    color: #dcbe92;
+}
+/* 房屋图片弹窗层 */
+.banner_cover{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.banner_cover .close{
+    width: 0.26rem;
+    height: 0.26rem;
+    display: block;
+    background: url("../images/fang_close.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    z-index: 10;
+}
+.banner_c_slider{
+    height: 7.24rem;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    height: 4.2rem;
+    margin-top: 3.04rem;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.c_s_page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    font-size: 0.34rem;
+    line-height: 0.8rem;
+    text-align: center;
+}
+.c_s_content{
+    padding: 0.8rem 0.4rem 0;
+}
+.c_s_content h2{
+    font-size: 0.36rem;
+    color: #fff;
+    line-height: 0.56rem;
+}
+.c_s_content p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.48rem;
+    padding: 0.1rem 0;
+}
+/* 房屋信息 */
+.fang_info{
+    padding: 0.25rem 0.4rem;
+}
+.fang_info h2{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #394043;
+}
+.fang_info .p1{
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.15rem;
+}
+.fang_info .p1 .money{
+    margin-right: 0.05rem;
+}
+.fang_info .p2{
+    margin-top: 0.1rem;
+    overflow: hidden;
+}
+.fang_info .p2 .change{
+    float: left;
+}
+.fang_info .p2 .numb{
+    float: right;
+    font-size: 0.22rem;
+    color: #9c9fa1;
+}
+.fang_info .p3{
+    padding-left: 0.3rem;
+    margin-top: 0.13rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    background: url("../images/kezhan/kezhan-12.svg") no-repeat left center;
+    background-size: 0.26rem 0.26rem;
+}
+.fang_info_tip{
+    width: 100%;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.26rem;
+    color: #ac8c5b;
+    line-height: 0.45rem;
+    background: #f6efe5;
+    border: 0.01rem solid #dcbe92;
+    border-radius: 0.1rem;
+    margin-top: 0.3rem;
+}
+
+/* 房屋规格 */
+.fang_gg .title{
+    font-size: 0.32rem;
+}
+.fang_gg_box{
+    width: 100%;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+    margin-top: 0.2rem;
+}
+.fang_gg_list{
+    flex: 1;
+    padding: 0 0.2rem;
+    text-align: center;
+}
+.fang_gg_list:first-child{
+    border-right: 0.01rem solid #e5e5e5;
+}
+.fang_gg_list .ico_13, .fang_gg_list .ico_14{
+    width: 0.64rem;
+    height: 0.64rem;
+    display: inline-block;
+    background: url("../images/kezhan/kezhan-13.svg") no-repeat center;
+    background-size: 100%;
+}
+.fang_gg_list .ico_14{
+    background: url("../images/kezhan/kezhan-14.svg") no-repeat center;
+    background-size: 100%;
+}
+.fang_gg_list p{
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+}
+.fang_gg_list p span{
+    display: inline-block;
+    font-size: 0.28rem;
+    color: #394043;
+    margin-top: 0.1rem;
+}
+/* 房屋详情 */
+.fang_xq{
+    padding: 0 0.4rem;
+}
+.fang_xq .title{
+    font-size: 0.32rem;
+}
+.fang_xq_box{
+    padding: 0.35rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.fang_xq_box:last-child{
+    border-bottom: none;
+}
+.fang_xq_box_div{
+    margin-top: 0.2rem;
+}
+.fang_xq_box_div p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.45rem;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.fang_xq_box_div p label{
+    display: inline-block;
+}
+.fang_xq_box_div p span{
+    flex: 1;
+}
+/* 设施服务 */
+.fang_xq_box .fang_ss_box{
+    padding-bottom: 0;
+}
+/* 房屋推荐 */
+.fang_tj{
+    padding-bottom: 0;
+    margin-bottom: 1.2rem;
+}
+.fang_tj .title{
+    font-size: 0.36rem;
+    margin-bottom: 0.2rem;
+}
+.xs_item_box{
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.xs_item_box .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.xs_item_box .img img{
+    width: 100%;
+}
+.xs_item_box .info{
+    flex: 1;
+}
+.xs_item_box .info h2{
+    font-size: 0.32rem;
+    color: #394043;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.xs_item_box .info .p1{
+    height: 0.32rem;
+    overflow: hidden;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.08rem;
+}
+.xs_item_box .info .p1 span{
+    margin-right: 0.15rem;
+}
+.xs_item_box .info .p2{
+    margin-top: 0.1rem;
+}
+.xs_item_box .info .p2 span{
+    margin-right: 0.15rem;
+}
+/* 底部按钮 */
+.float_wrap{
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    border-top: 0.01rem solid #e5e5e5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+.float_wrap .call{
+    float: left;
+    width: 2.4rem;
+    height: 100%;
+    text-align: center;
+}
+.float_wrap .call .ico_15{
+    width: 0.44rem;
+    height: 0.44rem;
+    display: inline-block;
+    margin-top: 0.14rem;
+    background: url("../images/kezhan/kezhan-15.svg") no-repeat center;
+    background-size: 100%;
+}
+.float_wrap .call p{
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    color: #6b7072;
+}
+.float_wrap .pay{
+    float: right;
+    width: 5.1rem;
+    height: 100%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+}
+/* page 设施服务 */
+.fang_sheshi h2{
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.fang_ss_box{
+    width: 100%;
+    padding-top: 0.3rem;
+    overflow: hidden;
+}
+.fang_ss_box_div{
+    width: 115%;
+    overflow: hidden;
+}
+.fang_ss_box_div .fang_ss_list{
+    float: left;
+    width: 0.96rem;
+    height: 1.72rem;
+    margin: 0 0.95rem 0 0;
+}
+.fang_ss_box_div .fang_ss_list span{
+    width: 0.96rem;
+    height: 0.96rem;
+    display: block;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+}
+
+/*.fang_ss_box_div .on span.ico_1{
+    background: #82dbf5 url("../images/index-04.svg") no-repeat center;
+    background-size: 0.48rem;
+}*/
+.fang_ss_box_div .fang_ss_list p{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+/* page 房屋详情介绍 */
+.fang_txt{
+    min-height: 100%;
+    margin-bottom: 0;
+}
+.fang_txt p{
+    font-size: 0.26rem;
+    line-height: 0.44rem;
+    color: #9c9fa1;
+    text-indent: 2em;
+    padding: 0.2rem 0;
+}

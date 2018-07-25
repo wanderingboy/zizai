@@ -1,0 +1,470 @@
+/*
+* 定制旅行
+* 张展
+* 2018-1-21
+*/
+
+.tracer_top{
+    width: 100%;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.tracer_top img{
+    width: 100%;
+}
+/* tracer_box1 */
+.tracer_box1{
+    padding: 0.1rem 0.4rem;
+    margin-bottom: 0;
+}
+.tracer_city, .tracer_time{
+    width: 100%;
+    padding: 0.3rem 0;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.tracer_city{
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.tracer_city .left, .tracer_time .left, .tracer_city .right, .tracer_time .right{
+    flex: 1;
+    padding-top: 0.4rem;
+    position: relative;
+}
+.tracer_city .right, .tracer_time .right{
+    text-align: right;
+}
+.tracer_city .left label, .tracer_time .left label, .tracer_city .right label, .tracer_time .right label{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    position: absolute;
+    top: 0;
+}
+.tracer_city .left label, .tracer_time .left label{
+    left: 0;
+}
+.tracer_city .right label, .tracer_time .right label{
+    right: 0.5rem;
+}
+.tracer_city .left span, .tracer_time .left span, .tracer_city .right span, .tracer_time .right span{
+    font-size: 0.32rem;
+    color: #394043;
+    padding-right: 0.5rem;
+}
+.tracer_city .left span, .tracer_city .right span{
+    background: url("../images/kezhan/kezhan-26.svg") no-repeat right center;
+    background-size: 0.32rem;
+}
+.tracer_time .right span{
+    background: url("../images/dingzhi/dingzhilvxing-25.svg") no-repeat right center;
+    background-size: 0.32rem;
+}
+.tracer_city .line, .tracer_time .line{
+    width: 0.56rem;
+    margin: 0 0.3rem;
+    background: url("../images/kezhan/kezhan-22.svg") no-repeat center;
+    background-size: 100% auto;
+}
+/* tracer_box2 */
+.p_tit{
+    width: 100%;
+    line-height: 0.6rem;
+    padding: 0 0.4rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.tracer_box2{
+    padding: 0 0.4rem;
+}
+.tracer_box2_list{
+    line-height: 0.88rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.tracer_box2_list:last-child{
+    border-bottom: none;
+}
+.tracer_box2_list label{
+    font-size: 0.28rem;
+    color: #394043;
+    float: left;
+}
+.tracer_box2_list .count{
+    float: right;
+    font-size: 0;
+}
+.tracer_box2_list .count .cut, .tracer_box2_list .count .add{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-19.svg") no-repeat center;
+    background-size: 100%;
+}
+.tracer_box2_list .count .default{
+    background: url("../images/kezhan/kezhan-19-1.svg") no-repeat center;
+    background-size: 100%;
+}
+.tracer_box2_list .count .add{
+    background: url("../images/kezhan/kezhan-18.svg") no-repeat center;
+    background-size: 100%;
+}
+.tracer_box2_list .count em{
+    font-size: 0.32rem;
+    color: #394043;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+/* tracer_box3 */
+.tracer_box3{
+    padding: 0.35rem 0.4rem 0;
+    margin-bottom: 0;
+}
+.tracer_box3_list{
+    line-height: 0.88rem;
+    overflow: hidden;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.tracer_box3_list label{
+    font-size: 0.28rem;
+    color: #394043;
+    float: left;
+}
+.tracer_box3 .inp{
+    float: right;
+    width: 4.6rem;
+    padding: 0.2rem 0;
+    line-height: 0.48rem;
+    font-size: 0.26rem;
+    color: #394043;
+    border: none;
+    background: none;
+    text-align: right;
+}
+.tracer_box3 .tit{
+    font-size: 0.32rem;
+    color: #394043;
+}
+.sx_stage{
+    width: 100%;
+    height: 0.84rem;
+    overflow: hidden;
+    margin: 0.2rem 0 0.35rem;
+    position: relative;
+}
+.sx_st_bar{
+    width: 100%;
+    height: 0.12rem;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    margin: 0.12rem 0;
+    position: relative;
+   
+}
+.sx_st_bar .sx_max_cover{
+    width: 40%;
+    height: 100%;
+    display: block;
+    background: #ead8be;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.sx_st_bar .sx_min_cover{
+    width: 20%;
+    height: 100%;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.sx_st_label{
+    width: 101%;
+    overflow: hidden;
+   
+}
+.sx_st_label li{
+    float: left;
+    width: 1.34rem;
+    font-size: 0.26rem;
+    text-align: center;
+    margin-top: 1px;
+}
+.sx_st_label li:first-child{
+    width: 0.67rem;
+    text-align: left;
+}
+.sx_st_label li:last-child{
+    width: 0.67rem;
+    margin-right: 0;
+    text-align: right;
+}
+.sx_st_label li span{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.sx_st_label li.on span{
+    background: #dcbe92 url("../images/kezhan/kezhan-17.svg") no-repeat center;
+    background-size: 0.24rem;
+}
+.sx_st_label li p{
+    text-indent: -0.06rem;
+    margin-top: 0.1rem;
+    color: #9c9fa1;
+}
+.sx_st_label li.on p{
+    color: #ff5848;
+}
+/* tracer_box4 */
+.tracer_box4{
+    padding: 0.32rem 0.4rem;
+    margin-bottom: 0;
+}
+.tracer_box4 textarea{
+    width: 100%;
+    line-height: 0.4rem;
+    color: #394043;
+    font-size: 0.26rem;
+    border: none;
+    resize: none;
+}
+/* tracer_box5 */
+.tracer_box5{
+    width: 100%;
+    padding: 0.2rem 0.4rem 0.4rem;
+}
+.tracer_box5 p{
+    text-align: right;
+}
+.tracer_box5 p a{
+    font-size: 0.24rem;
+    color: #48a7ff;
+    text-decoration: underline;
+}
+.tracer_box5 .btn{
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    text-align: center;
+    display: block;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+    border: none;
+    border-radius: 0.49rem;
+    -moz-border-radius: 0.49rem;
+    margin-top: 0.28rem;
+}
+/* 房屋推荐 */
+.tracer_tj{
+    padding-bottom: 0;
+}
+.tracer_tj .title{
+    font-size: 0.36rem;
+    margin-bottom: 0.2rem;
+}
+.xs_item_box{
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.xs_item_box .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.xs_item_box .img img{
+    width: 100%;
+}
+.xs_item_box .info{
+    flex: 1;
+}
+.xs_item_box .info h2{
+    font-size: 0.32rem;
+    color: #394043;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.xs_item_box .info .p1{
+    width: 4.1rem;
+    height: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.08rem;
+}
+.xs_item_box .info .p2{
+    margin-top: 0.1rem;
+}
+.xs_item_box .info .p2 span{
+    margin-right: 0.15rem;
+}
+
+/* page 费用估算 */
+.fee_tip{
+    width: 100%;
+    padding: 0.2rem 0.4rem;
+    background: #fff;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.fee_tip p{
+    font-size: 0.28rem;
+    color: #9c9fa1;
+    line-height: 0.4rem;
+    padding-left: 0.6rem;
+    background: url("../images/dingzhi/dingzhilvxing-26.svg") no-repeat left center;
+    background-size: 0.4rem;
+}
+.fee_wrap{
+    width: 100%;
+    padding: 0.64rem 0.4rem 1.5rem;
+}
+.fee_wrap h2{
+    font-size: 0.32rem;
+    color: #394043;
+    text-align: center;
+}
+.fee_wrap .p1{
+    font-size: 0.36rem;
+    color: #ff5848;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+.fee_wrap .p1 span{
+    font-size: 0.6rem;
+}
+.fee_wrap .p2{
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    color: #9c9fa1;
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.fee_detail{
+    width: 100%;
+    padding: 0.1rem 0.3rem;
+    position: relative;
+    background: #fff;
+    margin-top: 0.2rem;
+}
+.fee_detail::after{
+    content: '';
+    width: 6.7rem;
+    height: 0.16rem;
+    display: block;
+    overflow: hidden;
+    background: url("../images/dingzhi/fee_bg.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -0.15rem;
+}
+.fee_d_list{
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    font-size: 0.28rem;
+    color: #394043;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.fee_d_list .left{
+    float: left;
+}
+.fee_d_list .right{
+    float: right;
+}
+.fee_d_l_wrap{
+    padding-left: 0.3rem;
+}
+.fee_point_detail{
+    width: 100%;
+    height: 1.06rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.fee_point_detail:last-child{
+    border-bottom: none;
+}
+.fee_point_detail::before{
+    content: '';
+    width: 0.12rem;
+    height: 0.12rem;
+    display: block;
+    overflow: hidden;
+    background: #9c9fa1;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.06rem;
+    left: -0.3rem;
+}
+.fee_point_detail p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+}
+.fee_point_detail .label{
+    width: 2.1rem;
+}
+.fee_point_detail .r_txt{
+    flex: 1;
+    text-align: right;
+}
+.fee_point_detail .r_txt em{
+    font-size: 0.22rem;
+    text-decoration: line-through;
+    display: block;
+}
+.fee_bottom{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0.3rem;
+}
+.fee_bottom .back{
+    width: 2.16rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    font-size: 0.28rem;
+    color: #dcbe92;
+    display: inline-block;
+    border: 0.01rem solid #dcbe92;
+    border-radius: 0.32rem;
+    -webkit-border-radius: 0.32rem;
+}
+.fee_bottom p{
+    font-size: 0.2rem;
+    color: #9c9fa1;
+    margin-top: 0.3rem;
+}

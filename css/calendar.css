@@ -1,0 +1,152 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+.calendar{
+	padding-bottom:1rem;
+	padding-top:0.5rem;
+	width: 100%;
+	/* z-index: 999999999;
+	top: 0; */
+	overflow: auto;
+	height: 100%;
+	background: #fff;
+	font-family: Tahoma,"Lucida Grande",Verdana,"Microsoft YaHei",hei;
+	display: block !important; 
+}
+.firstSelect{
+	width:100%;
+	background:#fff;
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	overflow:scroll;
+	display:none;
+}
+body td{
+	text-align:center;
+	height:0.8rem;
+	position: relative;
+	padding-bottom: 0.3rem;
+	}
+.dateZone{
+	width:100%;
+	margin:auto;
+	background:#ffffff;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+	color:#666;
+	margin-top: 50px;
+	position: fixed;
+	z-index:9999;
+}
+.dateZone td{
+	background:#ffffff;
+	height:45px;
+	line-height: 45px;
+}
+
+.tbody td{
+	background:#fff;
+	color: #394043;
+}
+.dateZone td{
+	width:14.2%;
+	font-size: 14px;
+}
+.dateZone .colo{
+	color:#fa967f;
+}
+.dateTable{
+	width:95%;
+	margin:auto;
+}
+.tbody .ny1{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.dateTable td{
+	width:14.2%;
+	font-size: 0.32rem;
+}
+.dateTable tr td:first-child,
+.dateTable tr td:last-child{
+	color:#dcbe92;
+}
+.dateTable .rz{
+	width: 100%;
+	height: 0.36rem;
+	text-align: center;
+	font-size:0.18rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.show_radios{
+	border-radius: 0.12rem 0 0 0.12rem;
+	}
+.show_radios_t{
+	    border-radius: 0 0.12rem 0.12rem 0;
+}
+.datTip{
+	background:rgba(0,153,255,0.8);
+	width:40%;
+	position:fixed;
+	bottom:2px;
+	left:30%;
+}
+.datTip p{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	color:#fff;
+	padding:3px 0;
+	font-size:14px;
+	}
+.rz{
+	position:relative;
+	/* display: none; */
+	}
+.hover{
+	font-size:14px;
+	display:inline-block;
+	width:60%;
+	background:#FF3;
+	/* display: none; */
+	color:red;
+	text-align:center;
+	border-radius:5px;
+	}
+
+/* section{
+	margin:10px;
+	padding:5px;
+	} */
+@media only screen and (min-width:400px){
+	body td{
+		text-align:center;
+		height:47px;
+	}
+}
+@media only screen and (max-width:320px){
+	body{
+		font-size:14px;
+	}
+	.dateTable .rz{
+		font-size:12px;
+	}
+	.datTip p{
+		font-size:12px;
+	}
+	.hover{
+		font-size:12px;
+	}
+	body td{
+		text-align:center;
+		height:35px;
+	}
+}

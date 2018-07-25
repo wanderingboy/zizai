@@ -1,0 +1,77 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-在线托管</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap tg_online_top">
+    <p>请留下您的房屋基本信息与联系方式，自在管家会在30分钟内联系您，为您提供托管服务</p>
+</div>
+<p class="p_tit">房屋信息</p>
+<div class="wrap tg_online_box">
+    <a id="selCity">
+        <label>城市</label>
+        <em>三亚</em>
+    </a>
+    <a>
+        <label>小区名称</label>
+        <span>三亚湾凤凰水城</span>
+    </a>
+</div>
+<p class="p_tit">联系方式</p>
+<div class="wrap tg_online_box">
+    <a>
+        <label>姓名</label>
+        <input class="inp" type="text" placeholder="请填写联系人姓名">
+    </a>
+    <a>
+        <label>联系方式</label>
+        <input class="inp" type="text" placeholder="请填写联系人手机号">
+    </a>
+</div>
+<p class="p_tit">备注</p>
+<div class="wrap tg_online_text">
+    <textarea rows="4" placeholder="是否有其他情况？"></textarea>
+</div>
+<input class="online_btn" type="button" value="确认提交">
+<!--<a class="online_btn">确认提交</a>-->
+<!-- 选择出发地-->
+<div id="departure_place">
+    <div class="wrap city_wrap">
+        <div class="title">海南</div>
+        <div class="sx_lab_box">
+            <span class="on">三亚</span>
+            <span>文昌</span>
+        </div>
+    </div>
+    <div class="wrap city_wrap">
+        <div class="title">云南</div>
+        <div class="sx_lab_box">
+            <span>西双版纳</span>
+            <span>大理</span>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        //选择城市
+        $("#selCity").bind("click",function(){
+            $("#departure_place").show();
+
+        });
+        $("#departure_place .sx_lab_box span").bind("click",function(){
+            $("#selCity em").text($(this).text());
+            $("#departure_place").hide();
+
+        });
+    })
+</script>
+</body>
+</html>

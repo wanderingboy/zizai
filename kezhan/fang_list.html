@@ -1,0 +1,337 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>房屋列表</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../mescroll/mescroll.min.css">
+    <script src="../mescroll/mescroll.min.js"></script>
+     <script src="../js/dhtmlx.js"></script>
+</head>
+<body>
+<script>
+        var mySlider,i=0;
+        
+        function doOnLoad(){
+            mySlider = new dhtmlXSlider({
+                parent: "sliderObj",
+                //linkTo: ["sliderLink", "sliderLink2"],
+                step: 2,
+                min: 0,
+                max: 100,
+                value: [20,40],
+                range: true
+            });
+
+            mySlider.attachEvent("onChange", function(value){
+                setNoteToLog({
+                    eventNme: "onChange",
+                    arg: [value]
+                });
+            });
+            
+            mySlider.attachEvent("onSlideEnd", function(value){
+                setNoteToLog({
+                    eventNme: "onSlideEnd",
+                    arg: [value]
+                });
+            });
+
+        };
+        
+        function doOnUnload(){
+            if (mySlider != null){
+                mySlider.unload();
+                mySlider = null;
+            }
+        };
+
+        function setNoteToLog(data) {
+            var a = data.arg[0][0];
+            var b = data.arg[0][1];
+            console.log(a);
+            a_index  = 1;
+
+            if(a <= 0){
+                a_index =0;
+            }
+            if(a >0 && a<=20){
+                a_index = 1;
+            }
+
+            if(a >20 && a<=40){
+                a_index = 2;
+            }
+            if(a >40 && a<=60){
+                a_index = 3;
+            }
+            if(a >60 && a<=80){
+                a_index = 4;
+            }
+            if(a >80 ){
+                a_index = 5;
+            }
+
+            b_index  = 2;
+
+            if(b <= 0){
+                b_index =0;
+            }
+            if(b >0 && b<=20){
+                b_index = 1;
+            }
+
+            if(b >20 && b<=40){
+                b_index = 2;
+            }
+            if(b >40 && b<=60){
+                b_index = 3;
+            }
+            if(b >60 && b<=80){
+                b_index = 4;
+            }
+            if(b >80 ){
+                b_index = 5;
+            }
+
+             $(".sx_st_label li").removeClass("on");
+             $(".sx_st_label li").eq(a_index).addClass("on");
+             $(".sx_st_label li").eq(b_index).addClass("on");
+           
+            
+            // cont.innerHTML = "<div>"+ (++i)+") "+data.eventNme+" -- arguments: ["+data.arg.join(", ")+"]"+"</div>"+cont.innerHTML;
+        };
+
+    </script>
+
+
+<div class="fang_list_top">
+    <div class="search_box">
+        <div class="search">
+            <input class="btn" type="button">
+            <input class="inp" type="text" placeholder="搜索关键字/城市/房屋名称">
+            <!-- 输入框有值显示清空icon -->
+            <a class="emptied"></a>
+        </div>
+        <!-- 输入框焦点显示取消 -->
+        <a class="cancer">取消</a>
+    </div>
+    <div class="nav">
+        <a class="selected">地区<i></i></a>
+        <a>时间<i></i></a>
+        <a id="sxClick">筛选<i></i></a>
+    </div>
+</div>
+<div class="wrap fang_list">
+    <h2 class="title">精品推荐</h2>
+    <div id="fang_list" class="mescroll">
+    <div class="item_list">
+        <a class="img"  href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay"  href="order.html">立即预定</a>
+            <span class="change">最多可抵扣10%</span>
+        </div>
+    </div>
+    <div class="item_list">
+        <a class="img"  href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay"  href="order.html">立即预定</a>
+            <span class="change">最多可抵扣10%</span>
+        </div>
+    </div>
+    <div class="item_list">
+        <a class="img" href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay" href="order.html">立即预定</a>
+            <span class="change">最多可抵扣10%</span>
+        </div>
+    </div>
+    </div>
+</div>
+  
+<!-- 筛选条件 -->
+<div id="sxWrap" style="display: block;">
+    <!-- 筛选条件 -->
+    <div class="wrap sx_box1">
+        <div class="title">每晚价格</div>
+        <div class="sx_stage">
+             <div id="sliderObj"></div>   
+             <ul class="sx_st_label">
+              <li>
+                <p>￥300</p>
+            </li>
+            <li class="on">
+                <p>￥800</p>
+            </li>
+            <li class="on">  
+                <p>￥1000</p>
+            </li>
+            <li>              
+                <p>￥1500</p>
+            </li>
+            <li>              
+                <p>￥3000</p>
+            </li>
+            <li>              
+                <p>不限</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+    <div class="wrap sx_box2">
+        <div class="title">居室</div>
+        <div class="sx_lab_box">
+            <span class="on">一居</span>
+            <span>二居</span>
+            <span>三居</span>
+            <span>四居及以上</span>
+        </div>
+    </div>
+    <div class="wrap sx_box3">
+        <div class="sx_box3_list" id="person">
+            <label>人数</label>
+            <div class="count">
+                <a class="cut default"></a>
+                <em>1</em>
+                <a class="add"></a>
+            </div>
+        </div>
+        <div class="sx_box3_list" id="bed">
+            <label>床数</label>
+            <div class="count">
+                <a class="cut"></a>
+                <em>3</em>
+                <a class="add"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap sx_box4">
+        <div class="title">房型</div>
+        <div class="sx_lab_box">
+            <span class="on">酒店式公寓</span>
+            <span>别墅</span>
+            <span>民居</span>
+            <span>四合院</span>
+        </div>
+    </div>
+    <div class="sx_float">
+        <a class="reset">重置</a>
+        <a class="submit">确定查看</a>
+    </div>
+</div>
+<script>
+    $(function () {
+         doOnLoad();
+         $("#sxWrap").hide();
+        $('#sxClick').click(function () {
+            $('#sxWrap').show();
+        });
+        //点击切换选项
+        $('.sx_lab_box span').click(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+        //加减数量事件
+        $('.cut').click(function () {
+            var numb = $(this).siblings('em').text();
+            if(numb>1){
+                $(this).siblings('em').text(parseInt(numb)-1);
+                if(numb==2){
+                    $(this).addClass('default');
+                }
+            }
+        });
+        $('.add').click(function () {
+            var numb = $(this).siblings('em').text();
+            $(this).siblings('em').text(parseInt(numb)+1);
+            $(this).siblings('.cut').removeClass('default');
+        });
+    })
+</script>
+<script type="text/javascript">
+
+    var mescroll = new MeScroll("fang_list", { //第一个参数"mescroll"对应上面布局结构div的id
+                //如果您的下拉刷新是重置列表数据,那么down完全可以不用配置,具体用法参考第一个基础案例
+                //解析: down.callback默认调用mescroll.resetUpScroll(),而resetUpScroll会将page.num=1,再触发up.callback
+                down: {
+                    callback: downCallback //下拉刷新的回调,别写成downCallback(),多了括号就自动执行方法了
+                },
+                up: {
+                    callback: upCallback , //上拉加载的回调
+                    isBounce: false //如果您的项目是在iOS的微信,QQ,Safari等浏览器访问的,建议配置此项.解析(必读)
+                }
+            });
+
+//下拉刷新的回调
+        function downCallback() {
+            $.ajax({
+                url: 'xxxxxx',
+                success: function(data) {
+                    //联网成功的回调,隐藏下拉刷新的状态;
+                    mescroll.endSuccess(); //无参
+                    //设置数据
+                    //setXxxx(data);//自行实现 TODO
+                },
+                error: function(data) {
+                    //联网失败的回调,隐藏下拉刷新的状态
+                    mescroll.endErr();
+                }
+            });
+        }
+        
+        //上拉加载的回调 page = {num:1, size:10}; num:当前页 默认从1开始, size:每页数据条数,默认10
+        function upCallback(page) {
+            $.ajax({
+                url: 'xxxxxx?num=' + page.num + "&size=" + page.size, //如何修改page.num从0开始 ?
+                success: function(curPageData) {
+                    //联网成功的回调,隐藏下拉刷新和上拉加载的状态;
+                    //mescroll会根据传的参数,自动判断列表如果无任何数据,则提示空,显示empty配置的内容;
+                    //列表如果无下一页数据,则提示无更多数据,(注意noMoreSize的配置)
+                    
+                    //方法一(推荐): 后台接口有返回列表的总页数 totalPage
+                    //必传参数(当前页的数据个数, 总页数)
+                    //mescroll.endByPage(curPageData.length, totalPage);
+                            
+                    //方法二(推荐): 后台接口有返回列表的总数据量 totalSize
+                    //必传参数(当前页的数据个数, 总数据量)
+                    //mescroll.endBySize(curPageData.length, totalSize);
+                            
+                    //方法三(推荐): 您有其他方式知道是否有下一页 hasNext
+                    //必传参数(当前页的数据个数, 是否有下一页true/false)
+                    //mescroll.endSuccess(curPageData.length, hasNext);
+                            
+                    //方法四 (不推荐),会存在一个小问题:比如列表共有20条数据,每页加载10条,共2页.
+                    //如果只根据当前页的数据个数判断,则需翻到第三页才会知道无更多数据
+                    //如果传了hasNext,则翻到第二页即可显示无更多数据.
+                    //mescroll.endSuccess(curPageData.length);
+                    
+                    //设置列表数据
+                    //setListData(curPageData);//自行实现 TODO
+                },
+                error: function(e) {
+                    //联网失败的回调,隐藏下拉刷新和上拉加载的状态
+                    mescroll.endErr();
+                }
+            });
+        }
+
+   
+   
+  
+</script>
+
+</body>
+</html>

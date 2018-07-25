@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="52px" height="52px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M12,5
+			c0-1.1,0.737-1.484,1.638-0.853l6.723,4.706c0.901,0.631,0.901,1.663,0,2.294l-6.723,4.706C12.737,16.484,12,16.1,12,15V5z"/>
+	</g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M40,5
+			c0-1.1-0.737-1.484-1.638-0.853l-6.723,4.706c-0.901,0.631-0.901,1.663,0,2.294l6.723,4.706C39.263,16.484,40,16.1,40,15V5z"/>
+	</g>
+	<g>
+		<path fill="#FFFFFF" d="M26,7c1.654,0,3,1.346,3,3s-1.346,3-3,3s-3-1.346-3-3S24.346,7,26,7 M26,4c-3.313,0-6,2.686-6,6
+			s2.687,6,6,6s6-2.686,6-6S29.313,4,26,4L26,4z"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_7_" points="40,9 40,14 12,14 12,9 2,9 2,49 50,49 50,9 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_7_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<path fill="#FFFFFF" d="M44,12c1.654,0,3,1.346,3,3v28c0,1.654-1.346,3-3,3H8c-1.654,0-3-1.346-3-3V15c0-1.654,1.346-3,3-3H44
+				 M44,9H8c-3.313,0-6,2.686-6,6v28c0,3.314,2.687,6,6,6h36c3.313,0,6-2.686,6-6V15C50,11.686,47.313,9,44,9L44,9z"/>
+		</g>
+	</g>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="18" y1="24" x2="34" y2="24"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="18" y1="30" x2="34" y2="30"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="18" y1="36" x2="34" y2="36"/>
+</g>
+<rect x="0" y="0" fill="none" width="52" height="52"/>
+</svg>

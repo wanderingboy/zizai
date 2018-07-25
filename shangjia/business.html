@@ -1,0 +1,143 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>联盟商家</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap business_top">
+    <a id="selCity">三亚</a>
+</div>
+<div class="bs_item_box">
+    <div class="bs_item_nav">
+        <div class="bs_item_nav_box">
+            <a class="on">水果特产</a>
+            <a>美食推荐</a>
+            <a>优质景点</a>
+        </div>
+    </div>
+    <div class="bs_item">
+        <a class="bs_item_list" href="busi_detail.html">
+            <div class="img"><img src="../images/item_2_1.jpg" ></div>
+            <div class="info">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+                <p><span class="left">水果特产</span><span class="right">10908人已购买</span></p>
+            </div>
+        </a>
+        
+        <a class="bs_item_list" href="busi_detail.html">
+            <div class="img"><img src="../images/item_2_1.jpg" ></div>
+            <div class="info">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+                <p><span class="left">水果特产</span><span class="right">10908人已购买</span></p>
+            </div>
+        </a>
+
+        <a class="bs_item_list" href="busi_detail.html">
+            <div class="img"><img src="../images/item_2_1.jpg" ></div>
+            <div class="info">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+                <p><span class="left">水果特产</span><span class="right">10908人已购买</span></p>
+            </div>
+        </a>
+
+        <a class="bs_item_list" href="busi_detail.html">
+            <div class="img"><img src="../images/item_2_1.jpg" ></div>
+            <div class="info">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+                <p><span class="left">水果特产</span><span class="right">10908人已购买</span></p>
+            </div>
+        </a>
+
+        <a class="bs_item_list" href="busi_detail.html">
+            <div class="img"><img src="../images/item_2_1.jpg" ></div>
+            <div class="info">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+                <p><span class="left">水果特产</span><span class="right">10908人已购买</span></p>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- 选择出发地-->
+<div id="departure_place">
+    <div class="wrap city_wrap">
+        <div class="title">海南</div>
+        <div class="sx_lab_box">
+            <span class="on">三亚</span>
+            <span>文昌</span>
+        </div>
+    </div>
+    <div class="wrap city_wrap">
+        <div class="title">云南</div>
+        <div class="sx_lab_box">
+            <span>西双版纳</span>
+            <span>大理</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var items = $('.bs_item_list')[0];
+    $(window).on('scroll',function(){
+        if(scrollTop() + windowHeight() >= (documentHeight() - 1/*滚动响应区域高度取1px*/)){
+            waterallowData();
+        }
+    });
+    function waterallowData(){
+        /*$('.waterfllow-loading').addClass('active');*/
+        $('.bs_item').append($(items).clone());
+        /*$.ajax({
+         url:url,
+         type:"post",
+         data: params,
+         success:function(data,textStatus,jQXHR){
+         //添加数据
+         ...
+
+         //隐藏加载条
+         $('.waterfllow-loading.active').removeClass('active');
+         }
+         });*/
+    }
+    //获取页面顶部被卷起来的高度
+    function scrollTop(){
+        return Math.max(
+                //chrome
+                document.body.scrollTop,
+                //firefox/IE
+                document.documentElement.scrollTop);
+    }
+    //获取页面文档的总高度
+    function documentHeight(){
+        //现代浏览器（IE9+和其他浏览器）和IE8的document.body.scrollHeight和document.documentElement.scrollHeight都可以
+        return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+    }
+    //获取页面浏览器视口的高度
+    function windowHeight(){
+        //document.compatMode有两个取值。BackCompat：标准兼容模式关闭。CSS1Compat：标准兼容模式开启。
+        return (document.compatMode == "CSS1Compat")?
+                document.documentElement.clientHeight:
+                document.body.clientHeight;
+    }
+</script>
+<script>
+    $(function () {
+        $("#selCity").bind("click",function(){
+            $("#departure_place").show();
+
+        });
+        $("#departure_place .sx_lab_box span").bind("click",function(){
+            $("#selCity").text($(this).text());
+            $("#departure_place").hide();
+
+        });
+    })
+</script>
+</body>
+</html>

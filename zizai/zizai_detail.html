@@ -1,0 +1,207 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>自在旅行详情</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/zizai.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.superslide.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/lCalendar.css">
+    <script src="../js/lCalendar.min.js"></script>
+</head>
+<body>
+<!-- 景点图片 -->
+<div class="banner">
+    <ul class="slider_item">
+        <li style='background-image:url(../images/banner-1.jpg);' title=""><a></a></li>
+        <li style='background-image:url(../images/banner-2.jpg);' title=""><a></a></li>
+    </ul>
+    <ul class="slider_page"></ul>
+</div>
+<script>
+    $(function(){
+        $(".banner").slide({ mainCell:".slider_item" ,pageStateCell: '.slider_page', effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    })
+</script>
+<!-- 景点图片弹窗 设计图没有 不要就去掉  -->
+<div class="banner_cover" style="display: none">
+    <a class="close"></a>
+    <div class="banner_c_slider">
+        <div class="c_s_page"><span>1</span>/30</div>
+        <ul class="c_s_item">
+            <li style='background-image:url(../images/banner-1.jpg);' title=""></li>
+        </ul>
+    </div>
+    <div class="c_s_content">
+        <h2>筛选</h2>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%，绿化率高达40%，物业类型包括洋房和别墅、公寓和风情商业街，是集休闲度假、投资、养生、生态居住为一体的大区。</p>
+    </div>
+</div>
+<!-- 景点信息 -->
+<div class="wrap zz_detail_info">
+    <h2>海南 五天四晚高端定制游</h2>
+    <p class="p1"><span class="money">￥850</span>/人</p>
+    <p class="p2"><span class="change">最多可抵扣10%</span><span class="numb">12672人已订购</span></p>
+</div>
+<div class="wrap zz_box1">
+    <div class="zz_box1_list">
+        <label>出发地</label>
+        <a class="city">三亚</a>
+    </div>
+    <div class="zz_box1_list">
+        <label>出发时间</label>
+         <input id="demo10" type="text" readonly="" name="input_date" class="time" placeholder="入住时间" data-lcalendar="2011-01-1,2019-12-31" />
+       <!--  <a class="time">2017.11.07</a> -->
+    </div>
+</div>
+<h3 class="p_tit">出行人</h3>
+<div class="wrap zz_box2">
+    <div class="zz_box1_list">
+        <label>成人</label>
+        <div class="count">
+            <a class="cut default"></a>
+            <em>1</em>
+            <a class="add"></a>
+        </div>
+    </div>
+    <div class="zz_box1_list">
+        <label>儿童</label>
+        <div class="count">
+            <a class="cut"></a>
+            <em>3</em>
+            <a class="add"></a>
+        </div>
+    </div>
+</div>
+<!-- 自在推荐 -->
+<div class="wrap zz_box3">
+    <div class="zz_box3_list">
+        <h2>自在推荐</h2>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米...</p>
+    </div>
+    <div class="zz_box3_list">
+        <h2>产品特色</h2>
+        <img src="../images/item_1.jpg">
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米...</p>
+    </div>
+</div>
+<!-- 行程安排-->
+<div class="wrap zz_box4">
+    <h2>行程安排</h2>
+    <div class="zz_box4_list">
+        <div class="tit"><label>1</label><em>抵达三亚</em></div>
+        <span class="time">10:30-12:30</span>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+        <img src="../images/item_1.jpg">
+        <span class="time">10:30-12:30</span>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+        <img src="../images/item_1.jpg">
+    </div>
+    <div class="zz_box4_list">
+        <div class="tit"><label>2</label><em>抵达三亚</em></div>
+        <span class="time">10:30-12:30</span>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+        <img src="../images/item_1.jpg">
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+    </div>
+    <div class="zz_box4_list">
+        <div class="tit"><label>3</label><em>抵达三亚</em></div>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+        <img src="../images/item_1.jpg">
+    </div>
+    <div class="zz_box4_tj">
+        <a class="img" href="../zizai/zizai_detail.html"><img src="../images/item_2_1.jpg"></a>
+        <div class="info">        
+            <a href="../zizai/zizai_detail.html"><h3>四季花开,一家四口的童话小院浪漫中充斥着幸福</h3></a>
+            <a href="../zizai/zizai_detail.html"><p>远离都市喧嚣，私享沙滩海景慢...</p></a>
+            <a href="../zizai/zizai_detail.html">查看详情</a>
+        </div>
+    </div>
+</div>
+<!-- 费用说明 -->
+<div class="wrap zz_box3">
+    <div class="zz_box3_list">
+        <h2>费用说明</h2>
+        <p>翠屏凤凰水城位于三亚市区的河东路与金鸡岭路交汇处，立志打造旅游休闲度假地产典范作品，是三亚旅游地产的“王者之师”。项目总建筑面积130万平方米；规划有5大组团、8大功能区；建筑覆盖率仅25%。</p>
+    </div>
+</div>
+<!-- 预定须知 -->
+<div class="wrap zz_box5">
+    <a>预定须知</a>
+    <a>出行者保险</a>
+    <a>违约条款</a>
+</div>
+<!-- 相似推荐 -->
+<div class="wrap fang_tj">
+    <div class="title">更多线路</div>
+
+    <a class="xs_item_box" href="../zizai/zizai_detail.html">
+        <div class="img"><img src="../images/item_2_1.jpg" ></div>
+        <div class="info">
+            <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            <p class="p1"><span>海南三亚 三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+            <p class="p2"><span class="money">￥322</span><span class="change">最多可抵扣10%</span></p>
+        </div>
+    </a>
+
+    <a class="xs_item_box" href="../zizai/zizai_detail.html">
+        <div class="img"><img src="../images/item_2_1.jpg" ></div>
+        <div class="info">
+            <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            <p class="p1"><span>海南三亚 三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+            <p class="p2"><span class="money">￥322</span><span class="change">最多可抵扣10%</span></p>
+        </div>
+    </a>
+
+    <a class="xs_item_box" href="../zizai/zizai_detail.html">
+        <div class="img"><img src="../images/item_2_1.jpg" ></div>
+        <div class="info">
+            <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            <p class="p1"><span>海南三亚 三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+            <p class="p2"><span class="money">￥322</span><span class="change">最多可抵扣10%</span></p>
+        </div>
+    </a>
+
+</div>
+<!-- 底部按钮 -->
+<div class="float_wrap">
+    <a class="call" href="tel:#">
+        <span class="ico_15"></span>
+        <p>电话咨询</p>
+    </a>
+    <a class="pay" >立即预定</a>
+</div>
+<script>
+            var calendar = new lCalendar();
+            calendar.init({
+                'trigger': '#demo10',
+                'type': 'date'
+            });
+          
+           
+        </script>
+
+<script>
+    $(function () {
+        //加减数量事件
+        $('.cut').click(function () {
+            var numb = $(this).siblings('em').text();
+            if(numb>1){
+                $(this).siblings('em').text(parseInt(numb)-1);
+                if(numb==2){
+                    $(this).addClass('default');
+                }
+            }
+        });
+        $('.add').click(function () {
+            var numb = $(this).siblings('em').text();
+            $(this).siblings('em').text(parseInt(numb)+1);
+            $(this).siblings('.cut').removeClass('default');
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,821 @@
+/*
+* 自在旅行
+* 张展
+* 2018-1-21
+*/
+
+
+.zz_item{
+    padding: 0 0.4rem;
+}
+.zz_item_box{
+    padding: 0.3rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.zz_item_box:last-child{
+    border-bottom: none;
+}
+.zz_item_box .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.zz_item_box .img img{
+    width: 100%;
+}
+.zz_item_box .info{
+    flex: 1;
+}
+.zz_item_box .info h2{
+    font-size: 0.32rem;
+    color: #394043;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.zz_item_box .info .p1{
+    width: 4.1rem;
+    height: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.08rem;
+}
+.zz_item_box .info .p2{
+    margin-top: 0.1rem;
+}
+.zz_item_box .info .p2 span{
+    margin-right: 0.15rem;
+}
+
+/* page 自在旅行详情 */
+/* banner */
+.banner{
+    width:100%;
+    height: 4.2rem;
+    overflow:hidden;
+    position: relative;
+}
+.slider_item {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+.slider_item li {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.slider_item li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.slider_page{
+    position: absolute;
+    bottom: 0.25rem;
+    right: 0.5rem;
+    color: #fff;
+    font-size: 0.2rem;
+    z-index: 3;
+}
+.slider_page span{
+    font-size: 0.32rem;
+    color: #dcbe92;
+}
+/* 房屋图片弹窗层 */
+.banner_cover{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.banner_cover .close{
+    width: 0.26rem;
+    height: 0.26rem;
+    display: block;
+    background: url("../images/fang_close.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    z-index: 10;
+}
+.banner_c_slider{
+    width: 100%;
+    height: 7.24rem;
+    position: relative;
+    overflow: hidden;
+}
+.c_s_item {
+    width: 100%;
+    height: 4.2rem;
+    position: absolute;
+    top: 3.04rem;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.c_s_item li {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.c_s_page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.8rem;
+    z-index: 3;
+}
+.c_s_content{
+    padding: 0.8rem 0.4rem 0;
+}
+.c_s_content h2{
+    font-size: 0.36rem;
+    color: #fff;
+    line-height: 0.56rem;
+}
+.c_s_content p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.48rem;
+    padding: 0.1rem 0;
+}
+/* 房屋信息 */
+.zz_detail_info{
+    padding: 0.25rem 0.4rem;
+}
+.zz_detail_info h2{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #394043;
+}
+.zz_detail_info .p1{
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.15rem;
+}
+.zz_detail_info .p1 .money{
+    margin-right: 0.05rem;
+}
+.zz_detail_info .p2{
+    margin: 0.1rem 0;
+    overflow: hidden;
+}
+.zz_detail_info .p2 .change{
+    float: left;
+}
+.zz_detail_info .p2 .numb{
+    float: right;
+    font-size: 0.22rem;
+    color: #9c9fa1;
+}
+/* 出行信息 */
+.zz_box1{
+    padding: 0 0.4rem;
+    margin-bottom: 0;
+}
+.zz_box2{
+    padding: 0 0.4rem;
+}
+.zz_box1_list{
+    line-height: 0.88rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.zz_box1_list:last-child{
+    border-bottom: none;
+}
+.zz_box1_list label{
+    font-size: 0.28rem;
+    color: #394043;
+    float: left;
+}
+.zz_box1_list .count{
+    float: right;
+    font-size: 0;
+}
+.zz_box1_list .count .cut, .zz_box1_list .count .add{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-19.svg") no-repeat center;
+    background-size: 100%;
+}
+.zz_box1_list .count .default{
+    background: url("../images/kezhan/kezhan-19-1.svg") no-repeat center;
+    background-size: 100%;
+}
+.zz_box1_list .count .add{
+    background: url("../images/kezhan/kezhan-18.svg") no-repeat center;
+    background-size: 100%;
+}
+.zz_box1_list .count em{
+    font-size: 0.32rem;
+    color: #394043;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+.zz_box1_list .city{
+    float: right;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+}
+.zz_box1_list .time{
+    float: right;
+    font-size: 0.28rem;
+    color: #394043;
+    line-height: 0.88rem;
+    display: inline-block;
+    border: 0;
+    text-align: right;
+    padding-right: 0.6rem;
+    background: url("../images/dingzhi/dingzhilvxing-25.svg") no-repeat right center;
+    background-size: 0.4rem;
+}
+.zz_box1_list .new_page{
+    float: right;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+    padding-right: 0.4rem;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.zz_box1_list span{
+    float: right;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+}
+.zz_box1_list .inp{
+    float: right;
+    width: 4.6rem;
+    padding: 0.2rem 0;
+    line-height: 0.48rem;
+    font-size: 0.26rem;
+    color: #394043;
+    border: none;
+    background: none;
+    text-align: right;
+}
+.p_tit{
+    width: 100%;
+    line-height: 0.6rem;
+    padding: 0 0.4rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+
+/* 自在推荐 zz_box3 */
+.zz_box3{
+    padding: 0 0.4rem;
+}
+.zz_box3_list{
+    padding: 0.4rem 0 0.2rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.zz_box3_list:last-child{
+    border-bottom: none;
+}
+.zz_box3_list h2{
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    color: #394043;
+    padding-bottom: 0.2rem;
+}
+.zz_box3_list img{
+    width: 100%;
+    display: block;
+    margin: 0.1rem 0;
+}
+.zz_box3_list p{
+    padding: 0.1rem 0;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.46rem;
+}
+/* 行程安排 */
+.zz_box4 h2{
+    font-size: 0.32rem;
+    color: #394043;
+    padding-bottom: 0.2rem;
+}
+.zz_box4_list{
+    overflow: hidden;
+}
+.zz_box4_list .tit{
+    padding: 0.1rem 0;
+    line-height: 0.48rem;
+    font-size: 0.26rem;
+    color: #dcbe92;
+}
+.zz_box4_list .tit label{
+    width: 0.9rem;
+    height: 0.48rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.24rem;
+    color: #fff;
+    text-indent: 0.62rem;
+    background: url("../images/zizai/zizailvxing-31.svg") no-repeat center;
+    background-size: 100%;
+    margin-right: 0.2rem;
+}
+.zz_box4_list .tit em{
+    display: inline-block;
+    vertical-align: middle;
+}
+.zz_box4_list .time{
+    font-size: 0.26rem;
+    color: #394043;
+    line-height: 0.46rem;
+    display: block;
+    padding-left: 0.32rem;
+    background: url("../images/zizai/zizailvxing-30.svg") no-repeat left center;
+    background-size: 0.24rem;
+}
+.zz_box4_list p{
+    padding: 0.1rem 0;
+    font-size: 0.26rem;
+    line-height: 0.46rem;
+    color: #9c9fa1;
+}
+.zz_box4_list img{
+    width: 100%;
+    display: block;
+    margin: 0.2rem 0;
+}
+.zz_box4_tj{
+    padding: 0.2rem;
+    box-shadow: 0 0 0.08rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.zz_box4_tj .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    float: left;
+    overflow: hidden;
+}
+.zz_box4_tj .img img{
+    width: 100%;
+}
+.zz_box4_tj .info{
+    width: 3.6rem;
+    float: right;
+}
+.zz_box4_tj .info h3{
+    font-size: 0.32rem;
+    color: #394043;
+    line-height: 0.42rem;
+    max-height: 0.84rem;
+    overflow: hidden;
+}
+.zz_box4_tj .info p{
+    width: 100%;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.15rem;
+    line-height: 0.24rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.zz_box4_tj .info a{
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    color: #48a7ff;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+/* 预定须知 */
+.zz_box5{
+    padding: 0 0.4rem;
+}
+.zz_box5 a{
+    display: block;
+    font-size: 0.28em;
+    color: #394043;
+    line-height: 0.88rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.zz_box5 a:last-child{
+    border-bottom: none;
+}
+/* 房屋推荐 */
+.fang_tj{
+    padding-bottom: 0;
+    margin-bottom: 1.2rem;
+}
+.fang_tj .title{
+    font-size: 0.36rem;
+    margin-bottom: 0.2rem;
+}
+.xs_item_box{
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.xs_item_box .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.xs_item_box .img img{
+    width: 100%;
+}
+.xs_item_box .info{
+    flex: 1;
+}
+.xs_item_box .info h2{
+    font-size: 0.32rem;
+    color: #394043;
+    height: 0.8rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.xs_item_box .info .p1{
+    height: 0.32rem;
+    overflow: hidden;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.08rem;
+}
+.xs_item_box .info .p1 span{
+    margin-right: 0.15rem;
+}
+.xs_item_box .info .p2{
+    margin-top: 0.1rem;
+}
+.xs_item_box .info .p2 span{
+    margin-right: 0.15rem;
+}
+/* 底部按钮 */
+.float_wrap{
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    border-top: 0.01rem solid #e5e5e5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+.float_wrap .call{
+    float: left;
+    width: 2.4rem;
+    height: 100%;
+    text-align: center;
+}
+.float_wrap .call .ico_15{
+    width: 0.44rem;
+    height: 0.44rem;
+    display: inline-block;
+    margin-top: 0.14rem;
+    background: url("../images/kezhan/kezhan-15.svg") no-repeat center;
+    background-size: 100%;
+}
+.float_wrap .call p{
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    color: #6b7072;
+}
+.float_wrap .pay{
+    float: right;
+    width: 5.1rem;
+    height: 100%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+}
+
+/* page 提交订单 */
+/* box1 */
+.zz_order_box1{
+    padding: 0 0.4rem;
+    margin-bottom: 0;
+}
+.order_box1_top{
+    padding: 0.3rem 0;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.order_box1_top .img{
+    width: 2.1rem;
+    height: 1.6rem;
+    overflow: hidden;
+}
+.order_box1_top .img img{
+    width: 100%;
+}
+.order_box1_top .info{
+    flex: 1;
+    padding-left: 0.3rem;
+}
+.order_box1_top .info h2{
+    height: 0.88rem;
+    font-size: 0.36rem;
+    color: #394043;
+    font-weight: bold;
+    line-height: 0.44rem;
+    overflow: hidden;
+}
+.order_box1_top .info p{
+    margin-top: 0.3rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.zz_order_box2{
+    padding: 0 0.4rem;
+}
+/* 换购 */
+/* box3 */
+.order_box3{
+    padding: 0.15rem 0.4rem;
+}
+.order_chang_none, .order_chang{
+    width: 100%;
+    position: relative;
+}
+/* 不可换购 */
+.order_chang_none h2{
+    padding-left: 0.55rem;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    padding-top: 0.04rem;
+    color: #9c9fa1;
+    margin: 0.15rem 0;
+    background: url("../images/kezhan/kezhan-25.svg") no-repeat left center;
+    background-size: 0.4rem;
+}
+.order_chang_none p{
+    width: 5.5rem;
+    padding-left: 0.55rem;
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+    color: #9c9fa1;
+    margin-bottom: 0.15rem;
+}
+.order_chang_none .switch_box{
+    width: 1rem;
+    height: 0.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #e5e5e5;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+.order_chang_none .switch_box .switch{
+    width: 0.56rem;
+    height: 0.56rem;
+    display: block;
+    position: absolute;
+    top: 0.02rem;
+    left: 0.02rem;
+    background: #f5f5f5;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+/* 可换购 */
+.order_chang h2{
+    padding-left: 0.55rem;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    padding-top: 0.04rem;
+    color: #394043;
+    margin: 0.15rem 0;
+    background: url("../images/kezhan/kezhan-24.svg") no-repeat left center;
+    background-size: 0.4rem;
+}
+.order_chang p{
+    width: 5.5rem;
+    padding-left: 0.55rem;
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+    color: #9c9fa1;
+    margin-bottom: 0.15rem;
+}
+.order_chang .switch_box{
+    width: 1rem;
+    height: 0.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #dcbe92;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+.order_chang .switch_box .switch{
+    width: 0.56rem;
+    height: 0.56rem;
+    display: block;
+    position: absolute;
+    top: 0.02rem;
+    right: 0.02rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+.order_chang .switch_box_close{
+    width: 1rem;
+    height: 0.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border: 0.02rem solid #e5e5e5;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+}
+.order_chang .switch_box_close .switch{
+    width: 0.56rem;
+    height: 0.56rem;
+    display: block;
+    position: absolute;
+    top: 0.02rem;
+    left: 0.02rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    box-shadow: 0 0 0.05rem rgba(57,64,67,0.3);
+}
+/* float */
+.order_float{
+    width: 100%;
+    height: 0.99rem;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 0.01rem solid #e5e5e5;
+    z-index: 100;
+}
+.order_float .order_float_left{
+    float: left;
+    width: 5.1rem;
+    height: 100%;
+    padding: 0 0.2rem 0 0.4rem;
+    line-height: 0.98rem;
+    background: #fff;
+}
+.order_float_left .total{
+    font-size: 0.32rem;
+    color: #394043;
+    float: left;
+}
+.order_float_left .total em{
+    font-size: 0.26rem;
+    color: #ff5848;
+}
+.order_float_left .total em i{
+    font-size: 0.4rem;
+}
+.order_float .submit{
+    float: right;
+    width: 2.4rem;
+    height: 100%;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+}
+.zz_order_box3{
+    padding: 0.3rem 0.4rem;
+    margin-bottom: 1.2rem;
+}
+.zz_order_box3 textarea{
+    width: 100%;
+    line-height: 0.4rem;
+    color: #394043;
+    font-size: 0.26rem;
+    border: none;
+    resize: none;
+}
+/* page 出行人信息 */
+.zz_order_box4{
+    padding: 0 0.4rem;
+    margin: 0.2rem 0;
+}
+.zz_order_box4 .zz_box1_list .new_page{
+    color: #394043;
+}
+.zz_form_tip{
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color: #9c9fa1;
+    text-align: center;
+}
+.zz_form_box{
+    width: 100%;
+    padding: 0 0.4rem;
+    margin-top: 1rem;
+}
+.zz_form_box .btn{
+    width: 100%;
+    height: 0.88rem;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+    border: none;
+    border-radius: 0.44rem;
+    -webkit-border-radius: 0.44rem;
+}
+
+/* 选择证件类型弹窗 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.mask .dialog_select{
+    width: 100%;
+    padding: 0.2rem 0.4rem 0.4rem;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 1.2rem;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.mask .dialog_select h2{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 0.76rem;
+    text-align: center;
+}
+.select_box{
+    overflow: hidden;
+}
+.select_box .select_list{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.86rem;
+    text-align: center;
+    display: block;
+    font-size: 0.32rem;
+    color: #394043;
+    background: #f5f5f5;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    margin-top: 0.2rem;
+}
+.mask .cancer{
+    width: 100%;
+    height: 0.99rem;
+    line-height: 0.98rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #394043;
+    display: block;
+    border-top: 0.01rem solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,420 @@
+/*
+* 房屋列表
+* 张展
+* 2018-1-17
+*/
+
+
+.fang_list_top{
+    width: 100%;
+    padding: 0.14rem 0.4rem;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+
+/* 检索 */
+.fang_list_top .nav{
+    width: 100%;
+    margin-top: 0.15rem;
+}
+.fang_list_top .nav a{
+    float: left;
+    width: 3.1rem;
+    line-height: 0.62rem;
+    font-size: 0.32rem;
+    text-align: center;
+}
+.fang_list_top .nav a:first-child, .nav a:last-child{
+    width: 1.8rem;
+}
+.fang_list_top .nav a.selected{
+    color: #dcbe92;
+}
+.fang_list_top .nav a i{
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.1rem;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-11.svg") no-repeat center;
+    background-size: 0.16rem;
+    margin: 0 0.1rem;
+}
+
+/* 精品推荐 */
+.fang_list{
+    padding-bottom: 0;
+}
+.title{
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+    color: #394043;
+}
+.item_list{
+    padding: 0.3rem 0 0.22rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.item_list:last-child{
+    border-bottom: none;
+}
+.item_list .img{
+    width: 100%;
+    height: 3.76rem;
+    overflow: hidden;
+    display: block;
+}
+.item_list .img img{
+    width: 100%;
+}
+.item_list h3{
+    width: 100%;
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 0.3rem;
+}
+.item_list a{
+    color: #394043;
+}
+
+.item_list p{
+    padding-left: 0.3rem;
+    margin-top: 0.15rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    background: url("../images/kezhan/kezhan-09.svg") no-repeat left center;
+    background-size: 0.26rem 0.26rem;
+}
+.item_list p span{
+    margin-right: 0.2rem;
+}
+.item_bottom{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    line-height: 0.44rem;
+}
+.item_bottom .money{
+    float: left;
+}
+.item_bottom .change{
+    float: right;
+}
+.item_bottom .pay{
+    float: right;
+    width: 1.48rem;
+    height: 0.44rem;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #fff;
+    background: #dcbe92;
+    border-radius: 0.22rem;
+    -webkit-border-radius: 0.22rem;
+    margin-left: 0.2rem;
+}
+/* 未找到房源 */
+.fang_list_no{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.fang_list_no img{
+    width: 100%;
+    margin-top: 1.7rem;
+}
+.fang_list_no h2{
+    font-size: 0.42rem;
+    color: #394043;
+    margin-top: 0.2rem;
+}
+.fang_list_no p{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+}
+
+/* page 筛选 */
+#sxWrap{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #f5f5f5;
+}
+.sx_box1{
+    margin-top: 0.2rem;
+    padding: 0.35rem 0.4rem;
+}
+.sx_stage{
+    width: 100%;
+    height: 0.84rem;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    position: relative;
+}
+.sx_st_bar{
+    width: 100%;
+    height: 0.12rem;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    margin: 0.12rem 0;
+    position: relative;   
+}
+.sx_st_bar .sx_max_cover{
+    width: 40%;
+    height: 100%;
+    display: block;
+    background: #ead8be;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.sx_st_bar .sx_min_cover{
+    width: 20%;
+    height: 100%;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+/*客栈筛选*/
+.kz_sx_st_bar{
+    background: #ead8be;
+}
+
+.sx_st_bar .kz_sx_max_cover{
+    width: 40%;
+    height: 100%;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.sx_st_bar .kz_sx_min_cover{
+    width: 20%;
+    height: 100%;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+}
+
+
+
+.sx_st_label{
+    width: 100%;
+    overflow: hidden;
+   
+}
+.sx_st_label li{
+    float: left;
+    width: 1.34rem;
+    font-size: 0.26rem;
+    text-align: center;
+    margin-top: 1px;
+}
+.sx_st_label li:first-child{
+    width: 0.67rem;
+    text-align: left;
+}
+.sx_st_label li:last-child{
+    width: 0.67rem;
+    margin-right: 0;
+    text-align: right;
+}
+.sx_st_bar .on{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+     background: #dcbe92 url("../images/kezhan/kezhan-17.svg") no-repeat center;
+    background-size: 0.24rem;
+    position: absolute;
+    top: -0.12rem;
+}
+.sx_st_label li span{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.sx_st_label li.on span{
+    background: #dcbe92 url("../images/kezhan/kezhan-17.svg") no-repeat center;
+    background-size: 0.24rem;
+}
+.sx_st_label li p{
+    text-indent: -0.06rem;
+    margin-top: 0.1rem;
+    color: #9c9fa1;
+}
+.sx_st_label li.on p{
+    color: #ff5848;
+}
+.sx_lab_box{
+    width: 110%;
+    overflow: hidden;
+    margin-top: 0.1rem;
+}
+.sx_lab_box span{
+    float: left;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    width: 2.1rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #6b7072;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.36rem;
+    -webkit-border-radius: 0.36rem;
+}
+.sx_lab_box span.on{
+    border-color: #dcbe92;
+    background-color: #dcbe92;
+    color: #fff;
+}
+.sx_box3{
+    padding: 0 0.4rem;
+}
+.sx_box3_list{
+    line-height: 0.88rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.sx_box3_list:last-child{
+    border-bottom: none;
+}
+.sx_box3_list label{
+    font-size: 0.28rem;
+    color: #394043;
+    float: left;
+}
+.sx_box3_list .count{
+    float: right;
+    font-size: 0;
+}
+.sx_box3_list .count .cut, .sx_box3_list .count .add{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-19.svg") no-repeat center;
+    background-size: 100%;
+}
+.sx_box3_list .count .default{
+    background: url("../images/kezhan/kezhan-19-1.svg") no-repeat center;
+    background-size: 100%;
+}
+.sx_box3_list .count .add{
+    background: url("../images/kezhan/kezhan-18.svg") no-repeat center;
+    background-size: 100%;
+}
+.sx_box3_list .count em{
+    font-size: 0.32rem;
+    color: #394043;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+.sx_float{
+    width: 100%;
+    height: 0.98rem;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.sx_float .reset{
+    width: 2.8rem;
+    height: 100%;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #6b7072;
+}
+.sx_float .submit{
+    flex: 1;
+    height: 100%;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+}
+
+/* page 选择城市 */
+.city_wrap{
+    margin: 0;
+    background: none;
+    border: none;
+    padding-bottom: 0;
+}
+/*sx_bar*/
+.sx_bar{
+    height: 
+}
+
+/*价格区间选择*/
+.dhxsl_container,.dhtmlxslider_material{
+        width: 100%;
+    height: 0.12rem;
+    display: block;
+    background: #e5e5e5;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    margin: 0.12rem 0;
+    position: relative;
+}
+.dhxsl_track_bg,.dhxsl_track{
+    background: #ead8be;
+    position: absolute;
+    top: 0rem;
+    height: 0.12rem;
+}
+.dhxsl_runner{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: inline-block;
+    background: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    background: #dcbe92 url(../images/kezhan/kezhan-17.svg) no-repeat center;
+    background-size: 0.24rem;
+    position: absolute;
+    top: -0.12rem;
+}

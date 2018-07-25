@@ -1,0 +1,81 @@
+/*
+* 搜索
+* 张展
+* 2018-1-18
+*/
+
+
+.p_search{
+    width: 100%;
+    padding: 0.14rem 0.4rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* 输入提示 */
+.p_search_now{
+    width: 100%;
+    padding: 0 0.4rem;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    z-index: 1;
+}
+.p_search_now a{
+    display: block;
+    width: 100%;
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+    color: #394043;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.p_search_now a:last-child{
+    border-bottom: none;
+}
+/* 搜索记录 */
+.p_search_old{
+    padding: 0.4rem;
+    overflow: hidden;
+    position: relative;
+}
+.p_search_old .delete{
+    width: 0.38rem;
+    height: 0.38rem;
+    display: block;
+    background: url("../images/kezhan/kezhan-21.svg") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.4rem;
+}
+.p_search_old h2{
+    font-size: 0.26rem;
+    color: #6b7072;
+}
+.p_search_old p{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.p_search_old_list{
+    width: 6.9rem;
+    overflow: hidden;
+}
+.p_search_old_list a{
+    float: left;
+    margin: 0.2rem 0.2rem 0 0;
+    min-width: 1.8rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    padding: 0 0.3rem;
+    text-align: center;
+    border: 0.01rem solid #e5e5e5;
+    font-size: 0.28rem;
+    color: #6b7072;
+    border-radius: 0.36rem;
+    -webkit-border-radius: 0.36rem;
+}

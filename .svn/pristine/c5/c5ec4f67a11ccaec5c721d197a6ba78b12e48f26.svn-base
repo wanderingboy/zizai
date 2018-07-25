@@ -1,0 +1,244 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>房屋列表</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+ <div class="loading waterfllow_top_loading ">加载中</div>
+<div class="fang_list_top">
+    <div class="search_box">
+        <div class="search">
+            <input class="btn" type="button">
+            <input class="inp" type="text" placeholder="搜索关键字/城市/房屋名称">
+            <!-- 输入框有值显示清空icon -->
+            <a class="emptied"></a>
+        </div>
+        <!-- 输入框焦点显示取消 -->
+        <a class="cancer">取消</a>
+    </div>
+    <div class="nav">
+        <a class="selected">地区<i></i></a>
+        <a>时间<i></i></a>
+        <a id="sxClick">筛选<i></i></a>
+    </div>
+</div>
+<div class="wrap fang_list">
+    <h2 class="title">精品推荐</h2>
+    <div id="fang_list">
+    <div class="item_list">
+        <a class="img"  href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay"  href="order.html">立即预定</a>
+            <span class="change">3220可换购</span>
+        </div>
+    </div>
+    <div class="item_list">
+        <a class="img"  href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay"  href="order.html">立即预定</a>
+            <span class="change">3220可换购</span>
+        </div>
+    </div>
+    <div class="item_list">
+        <a class="img" href="fang_detail.html"><img src="../images/item_1.jpg"></a>
+        <a href="fang_detail.html"><h3>三亚湾凤凰水城店·舒适园景单卧套房1</h3></a>
+        <p><span>海南三亚</span><span>三亚湾</span><span>1室1厅</span><span>1厨1卫</span></p>
+        <div class="item_bottom">
+            <span class="money">￥322</span>
+            <a class="pay" href="order.html">立即预定</a>
+            <span class="change">3220可换购</span>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- 筛选条件 -->
+<div id="sxWrap">
+    <!-- 筛选条件 -->
+    <div class="wrap sx_box1">
+        <div class="title">每晚价格</div>
+        <div class="sx_stage">
+            <div class="sx_st_bar">
+                <span class="sx_max_cover"></span>
+                <span class="sx_min_cover"></span>
+            </div>
+            <ul class="sx_st_label">
+                <li>
+                    <span></span>
+                    <p>￥0</p>
+                </li>
+                <li class="on">
+                    <span></span>
+                    <p>￥100</p>
+                </li>
+                <li class="on">
+                    <span></span>
+                    <p>￥300</p>
+                </li>
+                <li>
+                    <span></span>
+                    <p>￥500</p>
+                </li>
+                <li>
+                    <span></span>
+                    <p>￥800</p>
+                </li>
+                <li>
+                    <span></span>
+                    <p>不限</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap sx_box2">
+        <div class="title">居室</div>
+        <div class="sx_lab_box">
+            <span class="on">一居</span>
+            <span>二居</span>
+            <span>三居</span>
+            <span>四居及以上</span>
+        </div>
+    </div>
+    <div class="wrap sx_box3">
+        <div class="sx_box3_list" id="person">
+            <label>人数</label>
+            <div class="count">
+                <a class="cut default"></a>
+                <em>1</em>
+                <a class="add"></a>
+            </div>
+        </div>
+        <div class="sx_box3_list" id="bed">
+            <label>床数</label>
+            <div class="count">
+                <a class="cut"></a>
+                <em>3</em>
+                <a class="add"></a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap sx_box4">
+        <div class="title">房型</div>
+        <div class="sx_lab_box">
+            <span class="on">酒店式公寓</span>
+            <span>别墅</span>
+            <span>民居</span>
+            <span>四合院</span>
+        </div>
+    </div>
+    <div class="sx_float">
+        <a class="reset">重置</a>
+        <a class="submit">确定查看</a>
+    </div>
+</div>
+<div class="loading waterfllow_loading">加载中</div>
+<script type="text/javascript">
+    var items = $('.item_list')[0];
+    $(window).on('scroll',function(){
+        if(scrollTop() + windowHeight() >= (documentHeight() - 1/*滚动响应区域高度取1px*/)){
+            $('.waterfllow-loading').show();
+            waterallowData();
+            
+        }
+        if(scrollTop()<= 0){
+            
+
+            waterallowTopData();
+        }
+    });
+    function waterallowData(){
+        $('.waterfllow_loading').show();
+        setTimeout("$('.waterfllow_loading').hide();$('#fang_list').append($(items).clone());",1000);
+       // ;
+        // $('.fang_list').append($(items).clone());
+        /*$.ajax({
+         url:url,
+         type:"post",
+         data: params,
+         success:function(data,textStatus,jQXHR){
+         //添加数据
+         ...
+
+         //隐藏加载条
+         $('.waterfllow-loading.active').removeClass('active');
+         }
+         });*/
+    }
+    function waterallowTopData(){
+        $('.waterfllow_top_loading').show();
+        setTimeout("$('.waterfllow_top_loading').hide();$('#fang_list').prepend($(items).clone());",1000);
+       // ;
+        // $('.fang_list').append($(items).clone());
+        /*$.ajax({
+         url:url,
+         type:"post",
+         data: params,
+         success:function(data,textStatus,jQXHR){
+         //添加数据
+         ...
+
+         //隐藏加载条
+         $('.waterfllow-loading.active').removeClass('active');
+         }
+         });*/
+    }
+    //获取页面顶部被卷起来的高度
+    function scrollTop(){
+        return Math.max(
+                //chrome
+                document.body.scrollTop,
+                //firefox/IE
+                document.documentElement.scrollTop);
+    }
+    //获取页面文档的总高度
+    function documentHeight(){
+        //现代浏览器（IE9+和其他浏览器）和IE8的document.body.scrollHeight和document.documentElement.scrollHeight都可以
+        return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+    }
+    //获取页面浏览器视口的高度
+    function windowHeight(){
+        //document.compatMode有两个取值。BackCompat：标准兼容模式关闭。CSS1Compat：标准兼容模式开启。
+        return (document.compatMode == "CSS1Compat")?
+                document.documentElement.clientHeight:
+                document.body.clientHeight;
+    }
+</script>
+<script>
+    $(function () {
+        $('#sxClick').click(function () {
+            $('#sxWrap').show();
+        });
+        //点击切换选项
+        $('.sx_lab_box span').click(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+        //加减数量事件
+        $('.cut').click(function () {
+            var numb = $(this).siblings('em').text();
+            if(numb>1){
+                $(this).siblings('em').text(parseInt(numb)-1);
+                if(numb==2){
+                    $(this).addClass('default');
+                }
+            }
+        });
+        $('.add').click(function () {
+            var numb = $(this).siblings('em').text();
+            $(this).siblings('em').text(parseInt(numb)+1);
+            $(this).siblings('.cut').removeClass('default');
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-增加资产-选择小区</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap tg_online_box add_assets">
+    <a class="fw_online">
+        <label>金隅丽景园</label>
+    </a>
+    <a class="fw_online selected">
+        <label>首开畅心园</label>
+    </a>
+    <a class="fw_online">
+        <label>中鸿国际商务花园</label>
+    </a>
+    <a class="fw_online">
+        <label>保利嘉园三号院</label>
+    </a>
+    <a class="fw_online">
+        <label>驻欣家园</label>
+    </a>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-生活服务-在线预约</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap fw_online_top">
+    <p>鲁能山海天·海石滩贰号<br>3-5-2109</p>
+</div>
+<div class="wrap tg_online_box">
+    <a>
+        <label>姓名</label>
+        <input class="inp" type="text" placeholder="请填写联系人姓名">
+    </a>
+    <a>
+        <label>联系方式</label>
+        <input class="inp" type="text" placeholder="请填写联系人手机号">
+    </a>
+</div>
+<p class="p_tit">请勾选您需要预约的服务</p>
+<div class="wrap tg_online_box">
+    <a class="fw_online">
+        <label>接送机</label>
+        <input class="check" type="checkbox" placeholder="" checked>
+    </a>
+    <a class="fw_online">
+        <label>布置节日/生日房间</label>
+        <input class="check" type="checkbox" placeholder="">
+    </a>
+    <a class="fw_online">
+        <label>邀请米其林3星海鲜大厨准备一顿晚餐</label>
+        <input class="check" type="checkbox" placeholder="">
+    </a>
+    <a class="fw_online">
+        <label>婚礼宴会</label>
+        <input class="check" type="checkbox" placeholder="">
+    </a>
+</div>
+<p class="p_tit">其他需求</p>
+<div class="wrap tg_online_text">
+    <textarea rows="4" placeholder="请填写您的需求..."></textarea>
+</div>
+<input class="online_btn" type="button" value="完成">
+<!--<a class="online_btn">确认提交</a>-->
+
+
+</body>
+</html>

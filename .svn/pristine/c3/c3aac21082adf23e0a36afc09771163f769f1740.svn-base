@@ -1,0 +1,148 @@
+/*
+* 选择日期
+* 张展
+* 2018-1-18
+*/
+
+
+.time_top{
+    width: 100%;
+    padding: 0.06rem 0.4rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    background: #fff;
+    overflow: hidden;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.time_top ul{
+    width: 7.07rem;
+    line-height: 0.44rem;
+    display: block;
+    overflow: hidden;
+}
+.time_top ul li{
+    width: 0.64rem;
+    float: left;
+    margin-right: 0.37rem;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #394043;
+}
+.time_top ul li.rest{
+    color: #dcbe92;
+}
+.time_wrap{
+    width: 100%;
+    padding: 0 0.4rem;
+    overflow: hidden;
+}
+.time_wrap table{
+    width: 100%;
+    display: block;
+    border: none;
+}
+.time_wrap table thead tr th{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.time_wrap table tbody tr td{
+    width: 1.01rem;
+    height: 0.84rem;
+}
+.time_wrap table tbody tr td:last-child{
+    width: 0.64rem;
+}
+.time_wrap table tbody tr td a{
+    display: block;
+    width: 0.64rem;
+    height: 0.8rem;
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+    color: #394043;
+    text-align: center;
+    position: relative;
+    border-radius: 0.05rem;
+    -webkit-border-radius: 0.05rem;
+}
+/* 双休日 */
+.time_wrap table tbody tr td.rest a{
+    color: #dcbe92;
+}
+/* 今天 非双休日 */
+.time_wrap table tbody tr td a.now::before{
+    content: '';
+    width: 0.12rem;
+    height: 0.12rem;
+    display: block;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    background: #394043;
+    font-size: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.06rem;
+    top: 0.56rem;
+}
+/* 今天 是双休日 */
+.time_wrap table tbody tr td.rest a.now::before{
+    background: #dcbe92;
+}
+.time_wrap table tbody tr td a.start, .time_wrap table tbody tr td a.end{
+    background: #dcbe92;
+    color: #fff;
+}
+.time_wrap table tbody tr td a.start::before, .time_wrap table tbody tr td a.end::before{
+    display: none;
+}
+/* 入住 */
+.time_wrap table tbody tr td a.start::after{
+    content: '入住';
+    width: 0.64rem;
+    display: block;
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+/* 离开 */
+.time_wrap table tbody tr td a.end::after{
+    content: '离开';
+    width: 0.64rem;
+    display: block;
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+/* 选择时间 */
+.time_wrap table tbody tr td a.selected{
+    background: #dcbe92;
+    color: #fff;
+}
+/* 过期或不可选 */
+.time_wrap table tbody tr td a.old{
+    color: #9c9fa1;
+}
+
+.time_submit{
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}

@@ -1,0 +1,30 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>个人中心-设置密码</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+
+<div class="login_wrap">
+    <form>
+    <div class="login_tit"><span>输入登录密码</span></div>
+    <div class="login_inp_box">
+        <input class="inp" type="text" name="" placeholder="输入登录密码">
+        <a class="eye"></a>
+    </div>
+    <p class="log_tip">密码需为8-20位字母、数字和符号的组合，不含空格</p>
+    <div class="login_btn_box">
+        <input class="btn" type="button" value="完成">
+    </div>
+    </form>
+</div>
+
+
+</body>
+</html>

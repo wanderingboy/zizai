@@ -1,0 +1,30 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>选择城市</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap city_wrap">
+    <div class="title">海南</div>
+    <div class="sx_lab_box">
+        <span class="on">三亚</span>
+        <span>文昌</span>
+    </div>
+</div>
+<div class="wrap city_wrap">
+    <div class="title">云南</div>
+    <div class="sx_lab_box">
+        <span>西双版纳</span>
+        <span>大理</span>
+    </div>
+</div>
+
+
+</body>
+</html>

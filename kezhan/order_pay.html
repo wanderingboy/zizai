@@ -1,0 +1,43 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>订单支付</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap pay_detail">
+    <h2>订单已生成请尽快完成支付！房屋为您保留60分钟，请及时付款。</h2>
+    <div class="pay_time">
+        <p>支付剩余时间</p>
+        <ul>
+            <li>5</li>
+            <li>9</li>
+            <li class="dot">:</li>
+            <li>5</li>
+            <li>9</li>
+        </ul>
+    </div>
+    <div class="pay_info">
+        <p><span>订单编号</span><em>ZZGY20171107000001</em></p>
+        <p><span>下单时间</span><em>2017.11.04 21:00</em></p>
+        <p><span>应付金额</span><em class="red">¥5100.00</em></p>
+    </div>
+</div>
+<div class="pay_way_tit">支付方式</div>
+<div class="wrap pay_ways">
+    <a>
+        <i class="ico_1"></i><span>账户余额</span><em>可用余额309,00元</em><input class="rad" type="radio" name="ways" checked>
+    </a>
+    <a>
+        <i class="ico_2"></i><span>微信支付</span><input class="rad" type="radio" name="ways">
+    </a>
+</div>
+<a class="pay_btn">立即支付</a>
+
+</body>
+</html>

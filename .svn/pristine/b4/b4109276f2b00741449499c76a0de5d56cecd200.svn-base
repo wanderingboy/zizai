@@ -1,0 +1,217 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心</title>
+    <link rel="stylesheet" href="../css/com.css">
+     <link href="../css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="banner">
+    <img src="../images/yezhu/banner.jpg">
+    <h2>精致设计  温馨浪漫</h2>
+</div>
+<div class="wrap owner_nav">
+    <div class="owner_nav_box">       
+        <div class="owner_nav_list">
+            <a href="owner_gj.html">
+                <span class="ico_1"></span>
+            </a>
+            <a href="owner_gj.html">
+                <h2>自在管家</h2>
+                <p>全年无忧，24小时贴身式管家服务</p>
+            </a>
+        </div>        
+
+        <div class="owner_nav_list">
+            <a href="owner_tg.html">
+                <span class="ico_1"></span>
+            </a>
+            <a href="owner_tg.html">
+                <h2>房屋托管</h2>
+                <p>交给自在经营，让您的房屋带来更多收益</p>
+            </a>
+        </div>
+
+        <div class="owner_nav_list">
+            <a href="owner_fw.html">
+                <span class="ico_1"></span>
+            </a>
+            <a href="owner_fw.html">
+            <h2>生活服务</h2>
+            <p>只有您想不到，没有我们做不到</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="wrap owner_box1">
+    <h2>我的资产<a href="owner_add_assets.html">添加资产</a></h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="owner_assets_detail.html">
+                    <label>【托管中】</label>
+                    <h2>鲁能山海天·海石滩贰号<br>3-5-2109</h2>
+                </a>
+                <div id="Demo0" style="text-align:center;">
+                    <div id="VoteMain0"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a href="owner_assets_detail.html">
+                    <label>【托管中】</label>
+                    <h2>鲁能山海天·海石滩贰号<br>3-5-2109</h2>
+                </a>
+                <div id="Demo1" style="text-align:center;">
+                    <div id="VoteMain1"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a href="owner_assets_detail.html">
+                    <label>【托管中】</label>
+                    <h2>鲁能山海天·海石滩贰号<br>3-5-2109</h2>
+                </a>
+                <div id="Demo2" style="text-align:center;">
+                    <div id="VoteMain2"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="../js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            //$(".VoteValue").css("margin-top",$(this).hei
+            Vote.Init();
+        });
+        var Vote={
+            voteJson:[
+                [
+                    {toaol:50,univalent:10000,color:"#dcbe92",time: "2015.01.15"},
+                    {toaol:200,univalent:17000,color:"#5f85be",time: "2016.01.15"}
+                ],
+                [
+                    {toaol:40,univalent:10000,color:"#dcbe92",time: "2015.01.15"},
+                    {toaol:75,univalent:17000,color:"#5f85be",time: "2016.01.15"}
+                ],
+                [
+                    {toaol:60,univalent:10000,color:"#dcbe92",time: "2015.01.15"},
+                    {toaol:80,univalent:17000,color:"#5f85be",time: "2016.01.15"}
+                ]
+            ],
+            Init:function(){
+                for(var i=0;i<Vote.voteJson.length;i++){
+                    var str = [Vote.voteJson[i][0].toaol,Vote.voteJson[i][1].toaol];
+                    var max = Math.max.apply(null, str);
+                    //console.log(str,max);
+                    for(var j=0;j<Vote.voteJson[i].length;j++){
+                        var mToaol=Vote.voteJson[i][j].toaol;
+                        var mUnivalent=Vote.voteJson[i][j].univalent;
+                        var mColor=Vote.voteJson[i][j].color;
+                        var mSpan=Vote.voteJson[i][j].time;
+                        var h = mToaol/max*2.7;
+                        var VoteItem=$("<div></div>");
+                        VoteItem.attr("class","VoteItem");
+                        $("#VoteMain"+i).append(VoteItem);
+
+                        var VoteText=$("<p>总价："+mToaol+"万<em>"+mUnivalent+"/m²</em></p>");
+                        VoteText.attr("class","VoteText");
+                        VoteItem.append(VoteText);
+
+
+                        var VoteValue=$("<div></div>");
+                        VoteValue.attr("class","VoteValue");
+                        VoteValue.css("background",mColor);
+                        //VoteValue.css("margin-top",300-20-mValue+"px");
+                        VoteValue.animate({height:h+'rem'},500);
+                        VoteItem.append(VoteValue);
+
+                        if(i==0){
+                            var VoteSpan=$("<div>购买时间<em>"+mSpan+"</em></div>");
+                            VoteSpan.attr("class","VoteSpan");
+                            VoteItem.append(VoteSpan);
+                        }else{
+                            var VoteSpan=$("<div>当前预估"+mSpan+"</div>");
+                            VoteSpan.attr("class","VoteSpan");
+                            VoteItem.append(VoteSpan);
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</div>
+<!-- 预定须知 -->
+<div class="wrap owner_box2">
+    <a>托管累计收入<em>¥798.00</em></a>
+    <a>账户余额<em>¥798.00</em></a>
+    <a>自在币<em>6215个</em></a>
+</div>
+<!-- 相似推荐 -->
+<div class="wrap owner_box3">
+    <div class="title">我的管家</div>
+
+    <div class="owner_box3_item">
+        <div class="img"><img src="../images/yezhu/user_pic.jpg" ></div>
+        <div class="info">
+            <a class="tit" href="owner_assets_detail.html">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            </a>
+            <p class="p1">03-05-1962</p>
+            <p class="p2">服务时间：2017.02.04 至 2018.02.03</p>
+            <div class="bottom">
+                <a>联系管家</a>
+                <a class="pay">续订服务</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="owner_box3_item">
+        <div class="img"><img src="../images/yezhu/user_pic.jpg" ></div>
+        <div class="info">
+            <a class="tit" href="owner_assets_detail.html">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            </a>
+            <p class="p1">03-05-1962</p>
+            <p class="p2">服务时间：2017.02.04 至 2018.02.03</p>
+            <div class="bottom">
+                <a>联系管家</a>
+                <a class="pay">续订服务</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="owner_box3_item">
+        <div class="img"><img src="../images/yezhu/user_pic.jpg" ></div>
+        <div class="info">
+            <a class="tit" href="owner_assets_detail.html">
+                <h2>四季花开,一家四口的童话小院浪漫中充斥着幸福</h2>
+            </a>
+            <p class="p1">03-05-1962</p>
+            <p class="p2">服务时间：2017.02.04 至 2018.02.03</p>
+            <div class="bottom">
+                <a>联系管家</a>
+                <a class="pay">续订服务</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+/*
+* 设施ico
+* 张展
+* 2018-1-27
+*/
+
+
+.fang_ss_box_div .fang_ss_list span.ico_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-62.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_1_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-62-1.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_2{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-63.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_2_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-63-1.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_3{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-64.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_3_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-64-1.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_4{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-65.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_4_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-65-1.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_5{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-66.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_5_1{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-66-1.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_6{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-67.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_7{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-68.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_8{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-69.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_9{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-70.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_10{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-71.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_11{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-72.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_12{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-73.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_13{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-74.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_14{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-75.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_15{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-76.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_16{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-77.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_17{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-78.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_18{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-79.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_19{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-80.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_20{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-81.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_21{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-82.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_22{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-83.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_23{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-84.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_24{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-85.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_25{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-86.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_26{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-87.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_27{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-88.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_28{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-89.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_29{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-90.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_30{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-91.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_31{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-92.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_32{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-93.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_33{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-94.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_34{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-95.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_35{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-96.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_36{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-97.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_37{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-98.svg") no-repeat center;
+    background-size: 0.48rem;
+}
+.fang_ss_box_div .fang_ss_list span.ico_38{
+    background: #f5f5f5 url("../images/sheshi/fususheshi-99.svg") no-repeat center;
+    background-size: 0.48rem;
+}

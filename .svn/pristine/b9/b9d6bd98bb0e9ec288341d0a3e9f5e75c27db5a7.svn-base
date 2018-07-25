@@ -1,0 +1,52 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>自在旅行-出行人信息</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/zizai.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<form>
+<div class="wrap zz_order_box4">
+    <div class="zz_box1_list">
+        <label>姓名</label>
+        <input class="inp" name="name" type="text" placeholder="与证件姓名一致 ">
+    </div>
+    <div class="zz_box1_list">
+        <label>证件类型</label>
+        <a class="new_page">身份证</a>
+    </div>
+    <div class="zz_box1_list">
+        <label>证件号码</label>
+        <input class="inp" name="name" type="text" placeholder="请填写您的证件号码 ">
+    </div>
+    <div class="zz_box1_list">
+        <label>手机号码</label>
+        <input class="inp" name="phone" type="text" placeholder="请填写您的常用手机号">
+    </div>
+</div>
+<p class="zz_form_tip">为了您的顺利出行，请务必保证填写项与出游所持证件一致。</p>
+<div class="zz_form_box">
+    <input class="btn" type="button" value="保存">
+</div>
+</form>
+<div class="mask">
+    <div class="dialog_select">
+        <h2>选择证件类型</h2>
+        <div class="select_box">
+            <a class="select_list">身份证</a>
+            <a class="select_list">护照</a>
+            <a class="select_list">军人证</a>
+            <a class="select_list">港澳通行证</a>
+        </div>
+    </div>
+    <a class="cancer">取消</a>
+</div>
+
+
+</body>
+</html>

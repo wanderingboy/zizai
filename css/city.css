@@ -1,0 +1,157 @@
+/*
+* 搜索
+* 张展
+* 2018-1-18
+*/
+
+
+.city_search{
+    padding: 0.14rem 0.4rem;
+}
+/* 当前位置 */
+.current{
+    padding: 0.2rem 0;
+}
+.current i{
+    width: 0.32rem;
+    height: 0.32rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-12.svg") no-repeat center;
+    background-size: 100%;
+    margin-right: 0.15rem;
+}
+.current span{
+    font-size: 0.32rem;
+    color: #394043;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+.current em{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* 输入检索结果 */
+.p_search_now{
+    width: 100%;
+    padding: 0 0.4rem;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    top: 0.88rem;
+    left: 0;
+    z-index: 1;
+}
+.p_search_now a{
+    display: block;
+    width: 100%;
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+    color: #394043;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.p_search_now a:last-child{
+    border-bottom: none;
+}
+/* 热门城市 */
+.pop_city{
+    width: 100%;
+    padding: 0.3rem 0.4rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.pop_city h2{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+}
+.pop_city .pop_city_box{
+    width: 6.9rem;
+    overflow: hidden;
+    margin-top: 0.1rem;
+}
+.pop_city .pop_city_box a{
+    min-width: 2.09rem;
+    height: 0.72rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #6b7072;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.36rem;
+    -webkit-border-radius: 0.36rem;
+    float: left;
+    margin: 0.2rem 0.2rem 0 0;
+}
+.pop_city .pop_city_box a.on{
+    color: #fff;
+    background: #dcbe92;
+    border: none;
+}
+
+/* city_wrap */
+h3{
+    padding: 0 0.4rem;
+    line-height: 0.6rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+}
+.city_wrap{
+    width: 100%;
+    padding: 0 0.4rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.city_wrap:last-child{
+    margin-bottom: 0.2rem;
+}
+.city_wrap a{
+    display: block;
+    width: 100%;
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+    color: #394043;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.city_wrap a:last-child{
+    border-bottom: none;
+}
+/* 右侧锚点 */
+.right_nav{
+    width: 0.4rem;
+    position: fixed;
+    top: 2rem;
+    right: 0;
+}
+.right_nav a{
+    width: 100%;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #48a7ff;
+    display: block;
+}
+/*departure_place*/
+#departure_place,#destination_place,#travel_date{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: #f2f2f2;
+    padding-top: 0.4rem;
+    z-index: 1000;
+    overflow-y: scroll;
+    display: none;
+    height: 100%;
+}
+
+#departure_place .city_wrap{
+    padding-top: 0.4rem;
+}

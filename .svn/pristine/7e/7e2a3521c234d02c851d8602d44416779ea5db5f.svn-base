@@ -1,0 +1,416 @@
+/*
+* 首页
+* 张展
+* 2018-1-17
+*/
+
+
+.header{
+    width: 100%;
+    overflow: hidden;
+}
+.top{
+    width: 100%;
+    padding: 0.14rem 0.4rem;
+    background: rgba(255,255,255,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.search{
+    float: left;
+    width: 6.02rem;
+    height: 0.6rem;
+    overflow: hidden;
+    border: 0.01rem solid #e5e5e5;
+    background: #fff;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.search .inp{
+    flex: 1;
+    border: none;
+    background: none;
+    height: 0.58rem;
+    line-height: 0.58rem;
+    padding: 0 0.2rem;
+    font-size: 0.26rem;
+    color: #333;
+}
+.search .inp::-webkit-input-placeholder{
+    color: #9c9fa1;
+}
+.search .btn{
+    width: 0.75rem;
+    height: 100%;
+    border: none;
+    background: url("../images/index-02.svg") no-repeat center;
+    background-size: 0.35rem 0.35rem;
+}
+.user{
+    float: right;
+    width: 0.36rem;
+    height: 0.4rem;
+    margin-top: 0.1rem;
+    background: url("../images/index-01.svg") no-repeat center;
+    background-size: 0.36rem 0.4rem;
+}
+/* banner */
+.banner{
+    width:100%;
+    height: 4.2rem;
+    overflow:hidden;
+    position: relative;
+}
+.slider_item {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    z-index: 1;
+}
+.slider_item li {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+.slider_item li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.slider_index {
+    width:100%;
+    text-align: center;
+    font-size: 0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 0.2rem;
+}
+.slider_index li {
+    text-indent: -99999px;
+    height: 0.12rem;
+    width: 0.12rem;
+    display: inline-block;
+    margin: 0 0.05rem;
+    background: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+}
+.slider_index li.on {
+    width: 0.32rem;
+    background: #fff;
+}
+/* nav */
+.nav{
+    width: 100%;
+    padding: 0.4rem 0 0.3rem;
+    font-size: 0;
+    background: #fff;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+    margin-bottom: 0.2rem;
+}
+.nav .nav_list{
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav .nav_list a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.nav .nav_list a span{
+    width: 0.96rem;
+    height: 0.96rem;
+    display: inline-block;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.nav .nav_list a span.ico_1{
+    background: #dcbe92 url("../images/index-03.svg") no-repeat center;
+    background-size: 0.48rem 0.42rem;
+}
+.nav .nav_list a span.ico_2{
+    background: #dcbe92 url("../images/index-04.svg") no-repeat center;
+    background-size: 0.44rem 0.44rem;
+}
+.nav .nav_list a span.ico_3{
+    background: #dcbe92 url("../images/index-05.svg") no-repeat center;
+    background-size: 0.43rem 0.42rem;
+}
+.nav .nav_list a span.ico_4{
+    background: #dcbe92 url("../images/index-06.svg") no-repeat center;
+    background-size: 0.46rem 0.48rem;
+}
+.nav .nav_list a p{
+    font-size: 0.24rem;
+    color: #6b7072;
+    margin-top: 0.15rem;
+}
+
+/* 酒店客栈 */
+.ind_tip{
+    font-size: 0.28rem;
+    color: #9c9fa1;
+    margin-top: 0.16rem;
+}
+.jd_item_1{
+    width: 100%;
+    height: 3.76rem;
+    overflow: hidden;
+    margin-top: 0.2rem;
+    display: block;
+}
+.jd_item_1 img{
+    width: 100%;
+}
+.jd_item_box{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.3rem;
+}
+.jd_item_list{
+    width: 2.1rem;
+    float: left;
+    margin-right: 0.2rem;
+    font-size: 0;
+}
+.jd_item_list:last-child{
+    margin-right: 0;
+}
+.jd_item_list .img{
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+}
+.jd_item_list .img img{
+    width: 100%;
+}
+.jd_item_list p{
+    width: 100%;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.jd_item_list span{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.08rem;
+}
+/* 特色房屋 */
+.ts_item_box{
+    width: 7.1rem;
+    margin-top: 0.2rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+    font-size: 0;
+    padding-right: 0.2rem;
+}
+.ts_item_list{
+    width: 6.7rem;
+    margin-right: 0.2rem;
+    display: inline-block;
+}
+.ts_item_list .img{
+    display: block;
+    width: 100%;
+    height: 3.76rem;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
+.ts_item_list .img img{
+    width: 100%;
+}
+.ts_item_list .img .tit{
+    width: 100%;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.ts_item_list .img .tit p{
+    width: 5.4rem;
+    font-size: 0.26rem;
+    color: #fff;
+    float: left;
+}
+.ts_item_list .img .tit span{
+    float: right;
+    color: #ff5848;
+    font-size: 0.22rem;
+}
+.ts_item_list .img .tit span i{
+    font-size: 0.32rem;
+}
+.ts_item_list .info{
+    margin-top: 0.35rem;
+    width: 100%;
+    overflow: hidden;
+}
+.ts_item_list .info .left{
+    width: 0.72rem;
+    height: 0.72rem;
+    float: left;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+    margin-top: 0.19rem;
+}
+.ts_item_list .info .left img{
+    width: 100%;
+}
+.ts_item_list .info .right{
+    float: right;
+    width: 5.7rem;
+}
+.ts_item_list .info .right h2{
+    font-size: 0.28rem;
+    color: #394043;
+}
+.ts_item_list .info .right h2 span{
+    font-size: 0.22rem;
+    color: #fff;
+    line-height: 0.28rem;
+    padding: 0 0.2rem;
+    background: #dcbe92;
+    border-radius: 0.14rem;
+    -webkit-border-radius: 0.14rem;
+    margin-left: 0.2rem;
+}
+.ts_item_list .info .right p{
+    height: 0.7rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.35rem;
+    margin-top: 0.12rem;
+    white-space: normal;
+}
+/* 商家联盟 */
+.sj_item_box{
+    width: 100%;
+    overflow: hidden;
+}
+.sj_item_box_div{
+    width: 110%;
+    overflow: hidden;
+}
+.sj_item_list{
+    width: 2.1rem;
+    float: left;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+}
+.sj_item_list .img{
+    width: 100%;
+    height: 1.6rem;
+    overflow: hidden;
+}
+.sj_item_list .img img{
+    width: 100%;
+}
+.sj_item_list p{
+    width: 100%;
+    font-size: 0.32rem;
+    color: #394043;
+    margin-top: 0.28rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sj_item_list span{
+    display: block;
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.06rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 旅居故事 */
+.index_lj{
+    padding-bottom: 0;
+}
+.lj_item_1{
+    width: 100%;
+    margin-top: 0.2rem;
+    display: block;
+}
+.lj_item_1 .img{
+    width: 100%;
+    height: 3.76rem;
+    overflow: hidden;
+}
+.lj_item_1 .img img{
+    width: 100%;
+}
+.lj_item_1 .info{
+    margin-top: 0.3rem;
+}
+.lj_item_1 .info p{
+    font-size: 0.32rem;
+    line-height: 0.35rem;
+    color: #394043;
+}
+.lj_item_1 .info span{
+    display: block;
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+}
+.lj_item_box{
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+.lj_item_list{
+    width: 100%;
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    overflow: hidden;
+    display: block;
+}
+.lj_item_list .info{
+    width: 4.3rem;
+    height: 1.6rem;
+    float: left;
+}
+.lj_item_list .info p{
+    font-size: 0.32rem;
+    height: 0.7rem;
+    line-height: 0.35rem;
+    color: #394043;
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+.lj_item_list .info span{
+    font-size: 0.22rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+    display: block;
+}
+.lj_item_list .img{
+    float: right;
+    width: 2.1rem;
+    height: 1.6rem;
+    overflow: hidden;
+}
+.lj_item_list .img img{
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M45,30c0,1.105-0.895,2-2,2H5c-1.105,0-2-0.895-2-2v-2c0-1.105,0.895-2,2-2h38c1.105,0,2,0.895,2,2V30z"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="34" y1="29" x2="36" y2="29"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12" y1="29" x2="14" y2="29"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8" y1="23" x2="18" y2="23"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="30" y1="23" x2="40" y2="23"/>
+	<path fill="#6F6F6F" d="M15,23c0,1.105-4,1.105-4,0s0.895-2,2-2S15,21.895,15,23z"/>
+	<path fill="#6F6F6F" d="M37,23c0,1.105-4,1.105-4,0s0.895-2,2-2S37,21.895,37,23z"/>
+	<path fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M9.101,20
+		c-3.235-3,1.79-3,0.756-6"/>
+	<path fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M16.899,20
+		c3.235-3-1.79-3-0.756-6"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="13" y1="22" x2="13" y2="18"/>
+	<path fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M31.101,20
+		c-3.235-3,1.79-3,0.756-6"/>
+	<path fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M38.899,20
+		c3.235-3-1.79-3-0.756-6"/>
+	
+		<line fill="none" stroke="#6F6F6F" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="35" y1="22" x2="35" y2="18"/>
+</g>
+<rect y="0" fill="none" width="48" height="48"/>
+</svg>

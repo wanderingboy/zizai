@@ -1,0 +1,370 @@
+/*
+* 联盟商家
+* 张展
+* 2018-1-21
+*/
+
+.business_top{
+    padding: 0.2rem 0.4rem;
+}
+.business_top a{
+    display: inline-block;
+    line-height: 0.48rem;
+    padding-right: 0.3rem;
+    background: url("../images/kezhan/kezhan-11.svg") no-repeat right center;
+    background-size: 0.18rem;
+    font-size: 0.32rem;
+    color: #394043;
+}
+.bs_item_box{
+    width: 100%;
+    border-bottom: 0.01rem solid #e5e5e5;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    overflow: hidden;
+}
+.bs_item_nav{
+    width: 100%;
+    height: 0.89rem;
+    padding: 0 0.6rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.bs_item_nav_box{
+    width: 100%;
+    height: 0.89rem;
+    float: left;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.bs_item_nav_box a{
+    flex: 1;
+    height: 0.89rem;
+    line-height: 0.87rem;
+    margin: 0 0.25rem;
+    font-size: 0.28rem;
+    color: #394043;
+    text-align: center;
+}
+.bs_item_nav_box a.on{
+    color: #dcbe92;
+    border-bottom: 0.02rem solid #dcbe92;
+}
+.bs_item{
+    width: 100%;
+    padding: 0.1rem 0.4rem 0;
+}
+.bs_item_list{
+    padding: 0.3rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.bs_item_list:last-child{
+    border-bottom: none;
+}
+.bs_item_list .img{
+    width: 2.1rem;
+    height: 1.6rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.bs_item_list .img img{
+    width: 100%;
+}
+.bs_item_list .info{
+    flex: 1;
+}
+.bs_item_list .info h2{
+    font-size: 0.32rem;
+    color: #394043;
+    height: 1.2rem;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+.bs_item_list .info p{
+    height: 0.25rem;
+    line-height: 0.25rem;
+    margin-top: 0.15rem;
+    overflow: hidden;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.bs_item_list .info p .left{
+    float: left;
+}
+.bs_item_list .info p .right{
+    float: right;
+}
+
+
+#departure_place{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+/* page 商家详情 */
+.bs_detail_top{
+    width: 100%;
+    height: 4.2rem;
+    overflow: hidden;
+}
+.bs_detail_top img{
+    width: 100%;
+}
+.bs_detail{
+    padding: 0.2rem 0.4rem;
+}
+.bs_detail h2{
+    font-size: 0.36rem;
+    color: #394043;
+    font-weight: bold;
+    line-height: 0.56rem;
+}
+.bs_d_p1{
+    overflow: hidden;
+    margin-top: 0.1rem;
+    font-size: 0.22rem;
+    color: #9c9fa1;
+}
+.bs_d_p1 .left{
+    float: left;
+}
+.bs_d_p1 .right{
+    float: right;
+}
+.bs_d_tip{
+    width: 100%;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.26rem;
+    color: #ac8c5b;
+    line-height: 0.44rem;
+    border: 0.01rem solid #dcbe92;
+    background: #f6efe5;
+    margin-top: 0.3rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+}
+.article{
+    width: 100%;
+    margin-top: 0.2rem;
+}
+.article p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.44rem;
+    padding: 0.1rem 0;
+}
+.article img{
+    width: 100%;
+    display: block;
+    margin: 0.1rem 0;
+}
+.directions{
+    width: 100%;
+    border-top: 0.01rem solid #e5e5e5;
+    padding: 0.2rem 0 0.1rem;
+    margin-top: 0.2rem;
+}
+.directions h3{
+    font-size: 0.36rem;
+    line-height: 0.56rem;
+    color: #394043;
+}
+.directions p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.44rem;
+}
+.bs_detail_item_box{
+    padding: 0.2rem 0.4rem 0;
+    margin-bottom: 1.2rem;
+}
+.bs_detail_item_box h2{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 0.76rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.bs_btn{
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+/* 成功弹窗 */
+.dialog{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background: rgba(0,0,0,0.5);
+}
+.dialog_box{
+    width: 6.7rem;
+    height: 5.2rem;
+    padding: 0 0.3rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.6rem;
+    left: 0.4rem;
+    overflow: hidden;
+}
+.dialog_box .ico_success{
+    width: 1.16rem;
+    height: 1.16rem;
+    display: block;
+    margin: 0.54rem auto 0;
+    background: url("../images/shangjia/lmshangjia-27.svg") no-repeat center;
+    background-size: 100%;
+}
+.dialog_box h2{
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.32rem;
+    margin-top: 0.4rem;
+    color: #394043;
+}
+.dialog_box p{
+    padding: 0 0.3rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.38rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+.dialog_box .close{
+    width: 3.4rem;
+    line-height: 0.88rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+    border-radius: 0.44rem;
+    -webkit-border-radius: 0.44rem;
+    display: block;
+    margin: 0.4rem auto 0;
+}
+
+/* page 扫描 */
+.scan_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 1.6rem;
+}
+.scan_wrap .scan{
+    width: 1.56rem;
+    height: 1.56rem;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/shangjia/lmshangjia-29.svg") no-repeat center;
+    background-size: 100%;
+}
+.scan_wrap h2{
+    font-size: 0.42rem;
+    text-align: center;
+    line-height: 0.42rem;
+    margin-top: 0.35rem;
+    color: #394043;
+}
+.scan_wrap p{
+    padding: 0 0.3rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    line-height: 0.24rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.scan_wrap .close{
+    width: 5.1rem;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+    border-radius: 0.49rem;
+    -webkit-border-radius: 0.49rem;
+    display: block;
+    margin: 0.8rem auto 0;
+}
+.scan_help{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0.4rem;
+}
+.scan_help a{
+    font-size: 0.24rem;
+    color: #48a7ff;
+    text-decoration: underline;
+}
+/* page 扫描成功 失败 */
+.scan_result_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 3.1rem;
+}
+.scan_result_wrap .success{
+    width: 1.16rem;
+    height: 1.16rem;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/shangjia/lmshangjia-27.svg") no-repeat center;
+    background-size: 100%;
+}
+.scan_result_wrap .fail{
+    width: 1.16rem;
+    height: 1.16rem;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/shangjia/lmshangjia-28.svg") no-repeat center;
+    background-size: 100%;
+}
+.scan_result_wrap h2{
+    font-size: 0.42rem;
+    text-align: center;
+    line-height: 0.42rem;
+    margin-top: 0.5rem;
+    color: #394043;
+}
+.scan_result_wrap p{
+    padding: 0 0.3rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.38rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.scan_result_wrap .close{
+    width: 3.4rem;
+    line-height: 0.88rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+    border-radius: 0.44rem;
+    -webkit-border-radius: 0.44rem;
+    display: block;
+    margin: 0.8rem auto 0;
+}

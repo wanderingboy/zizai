@@ -1,0 +1,181 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>个人中心-订单列表</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="user_order_nav">
+    <div class="user_order_nav_div">
+        <a class="on">全部</a>
+        <a>酒店订单</a>
+        <a>旅行订单</a>
+        <a>管家订单</a>
+    </div>
+</div>
+<div class="user_order_box">
+    <div class="wrap user_order_list">
+        <i class="jd"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>三亚湾凤凰水城店·舒适园景单卧套房</a></h2>
+                    <span>2017.11.02入住</span>
+                </div>
+                <label class="red">待付款</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥798,000</span>
+                <div class="u_o_l_r_b_btn">
+                    <a>取消订单</a>
+                    <a class="pay">付款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="lx"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>海南五天四晚高端定制游</a></h2>
+                    <span>2017.11.02使用</span>
+                </div>
+                <label>预订成功</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+                <div class="u_o_l_r_b_btn">
+                    <a>申请退款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="gj"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>基础房屋维保</a></h2>
+                    <span>2017.10.20 至 2017.11.19</span>
+                </div>
+                <label>待确认</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="gj"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>基础房屋维保</a></h2>
+                    <span>2017.10.20 至 2017.11.19</span>
+                </div>
+                <label>退款中</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="gj"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>基础房屋维保</a></h2>
+                    <span>2017.10.20 至 2017.11.19</span>
+                </div>
+                <label>已完成</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="gj"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>基础房屋维保</a></h2>
+                    <span>2017.10.20 至 2017.11.19</span>
+                </div>
+                <label>已完成</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+            </div>
+        </div>
+    </div>
+    <div class="wrap user_order_list">
+        <i class="gj"></i>
+        <div class="u_o_l_right">
+            <div class="u_o_l_r_top">
+                <div class="u_o_l_r_t_left">
+                    <h2><a>基础房屋维保</a></h2>
+                    <span>2017.10.20 至 2017.11.19</span>
+                </div>
+                <label>已完成</label>
+            </div>
+            <div class="u_o_l_r_bottom">
+                <span class="money">¥750</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var items = $('.user_order_list')[0];
+    $(window).on('scroll',function(){
+        if(scrollTop() + windowHeight() >= (documentHeight() - 1/*滚动响应区域高度取1px*/)){
+            waterallowData();
+        }
+    });
+    function waterallowData(){
+        /*$('.waterfllow-loading').addClass('active');*/
+        $('.user_order_box').append($(items).clone());
+        /*$.ajax({
+         url:url,
+         type:"post",
+         data: params,
+         success:function(data,textStatus,jQXHR){
+         //添加数据
+         ...
+
+         //隐藏加载条
+         $('.waterfllow-loading.active').removeClass('active');
+         }
+         });*/
+    }
+    //获取页面顶部被卷起来的高度
+    function scrollTop(){
+        return Math.max(
+                //chrome
+                document.body.scrollTop,
+                //firefox/IE
+                document.documentElement.scrollTop);
+    }
+    //获取页面文档的总高度
+    function documentHeight(){
+        //现代浏览器（IE9+和其他浏览器）和IE8的document.body.scrollHeight和document.documentElement.scrollHeight都可以
+        return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
+    }
+    //获取页面浏览器视口的高度
+    function windowHeight(){
+        //document.compatMode有两个取值。BackCompat：标准兼容模式关闭。CSS1Compat：标准兼容模式开启。
+        return (document.compatMode == "CSS1Compat")?
+                document.documentElement.clientHeight:
+                document.body.clientHeight;
+    }
+</script>
+</body>
+</html>

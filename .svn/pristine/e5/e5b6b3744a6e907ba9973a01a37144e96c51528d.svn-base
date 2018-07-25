@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="54px" height="54px" viewBox="0 0 54 54" enable-background="new 0 0 54 54" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M37.748,46.808V50H26c0.127-1.207,0.509-2.35,1.145-3.43s1.892-2.513,3.769-4.298
+			c1.511-1.443,2.437-2.421,2.779-2.935c0.461-0.709,0.692-1.41,0.692-2.103c0-0.766-0.201-1.355-0.602-1.767
+			c-0.402-0.412-0.956-0.618-1.664-0.618c-0.7,0-1.256,0.216-1.67,0.648s-0.652,1.149-0.716,2.152l-3.339-0.342
+			c0.199-1.891,0.823-3.249,1.872-4.072C29.316,32.412,30.628,32,32.202,32c1.725,0,3.081,0.477,4.067,1.431
+			c0.986,0.954,1.479,2.14,1.479,3.558c0,0.807-0.141,1.575-0.423,2.305c-0.282,0.73-0.73,1.494-1.342,2.293
+			c-0.406,0.53-1.137,1.292-2.194,2.287c-1.057,0.995-1.727,1.655-2.01,1.981c-0.282,0.326-0.511,0.644-0.686,0.954H37.748z"/>
+		<path fill="#FFFFFF" d="M46.585,50v-3.607h-7.156v-3.008L47.015,32h2.815v11.372H52v3.02h-2.171V50H46.585z M46.585,43.372v-6.126
+			l-4.019,6.126H46.585z"/>
+	</g>
+	<g>
+		<defs>
+			<polygon id="SVGID_15_" points="46,30 46,6 2,6 2,50 24,50 24,30 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_15_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<path fill="#FFFFFF" d="M24,9c10.477,0,19,8.523,19,19s-8.523,19-19,19S5,38.477,5,28S13.523,9,24,9 M24,6C11.85,6,2,15.85,2,28
+				c0,12.15,9.85,22,22,22s22-9.85,22-22C46,15.85,36.15,6,24,6L24,6z"/>
+		</g>
+	</g>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="24" y1="28" x2="24" y2="16"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="24" y1="28" x2="12" y2="28"/>
+</g>
+<rect y="0" fill="none" width="54" height="54"/>
+</svg>

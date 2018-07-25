@@ -1,0 +1,87 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-资产详情</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap assets_wrap">
+    <div class="assets_top">
+        <h2>鲁能山海天·海石滩贰号</h2>
+        <p>3-5-2109</p>
+        <a class="at">取消关注</a>
+    </div>
+    <div class="chart_line">
+        <div id="chart_line" style="width: 100%;height: 110%;"></div>
+    </div>
+    <div class="assets_box">
+        <p>小区名称：<span>鲁能山海天·海石滩贰号</span></p>
+        <p>地址：<span>海南省三亚市天涯区凤凰水城左岸</span></p>
+        <p>门牌号：<span>3-5-2109</span></p>
+        <p>房屋类型：<span>公寓</span></p>
+    </div>
+    <div class="assets_box">
+        <p>购房日期：<span>2016-05-06</span></p>
+        <p>房屋面积：<span>50m²</span></p>
+        <p>购房时金额：<span>总价50万（10000元/m²）</span></p>
+        <p>当前价格（2017-11-06）：<span>总价85万（17000元/m²）</span></p>
+        <p>房屋状态：<span>自住</span></p>
+    </div>
+</div>
+<a class="online_btn">房屋维保</a>
+
+<script type="text/javascript">
+    $(function () {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart_line'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title : {
+                subtext: '单位（万）',
+                x: 'center',
+                align: 'right'
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['0','2016.05.06', '2.17.05.06', '2.18.01.11']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [45, 70, 80, 95],
+                type: 'line',
+                areaStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgba(255, 88, 72,0.4)'
+                        }, {
+                            offset: 1,
+                            color: 'rgb(255, 255, 255)'
+                        }])
+                    }
+                },
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                }
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    })
+</script>
+</body>
+</html>

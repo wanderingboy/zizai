@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>自在旅居</title>
+    <link rel="stylesheet" href="css/com.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.superslide.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="top">
+        <div class="search">
+            <input class="inp" type="text" placeholder="请输入您的目的地">
+            <input class="btn" type="button">
+        </div>
+        <a class="user" href="user/user.html"></a>
+    </div>
+    <div class="banner">
+        <ul class="slider_item">
+            <li class="background_img" style='background-image:url(images/banner-1.jpg);' title=""><a></a></li>
+            <li class="background_img" style='background-image:url(images/banner-2.jpg);' title=""><a></a></li>
+        </ul>
+        <ul class="slider_index"></ul>
+        <ul class="slider_page"></ul>
+    </div>
+    <script>
+        $(function(){
+            $(".banner").slide({ titCell:".slider_index" , mainCell:".slider_item" ,pageStateCell: '.slider_page', effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+        })
+    </script>
+
+</div>
+<!-- nav -->
+<div class="nav">
+    <div class="nav_list">
+        <a href="kezhan/kezhan_list.html">
+            <span class="ico_1"></span>
+            <p>酒店客栈</p>
+        </a>
+    </div>
+    <div class="nav_list">
+        <a href="dingzhi/traver.html">
+            <span class="ico_2"></span>
+            <p>定制旅行</p>
+        </a>
+    </div>
+    <div class="nav_list">
+        <a href="shangjia/business.html">
+            <span class="ico_3"></span>
+            <p>联盟商家</p>
+        </a>
+    </div>
+    <div class="nav_list">
+        <a href="yezhu/owner.html">
+            <span class="ico_4"></span>
+            <p>业主中心</p>
+        </a>
+    </div>
+</div>
+<!-- nav end -->
+<!-- 自在旅行 -->
+<div class="wrap index_jd">
+    <div class="title">自在旅行<a href="zizai/zizai.html">更多</a></div>
+    <p class="ind_tip">因为另一个家，许下去那里旅行的承诺</p>
+
+    <a class="jd_item_1" href="zizai/zizai_detail.html">
+        <img src="" data-imgurl="images/item_1.jpg" >
+    </a>
+
+    <div class="jd_item_box">
+        <a class="jd_item_list" href="zizai/zizai_detail.html">
+            <div class="img"><img src="" data-imgurl="images/item_1_1.jpg"></div>
+            <p>海南五天四晚高端</p>
+            <span>定制游</span>
+        </a>
+
+        <a class="jd_item_list" href="zizai/zizai_detail.html">
+            <div class="jd_item_list">
+                <div class="img"><img src="" data-imgurl="images/item_1_1.jpg"></div>
+                <p>海南五天四晚高端</p>
+                <span>定制游</span>
+            </div>
+        </a>
+
+        <a class="jd_item_list" href="zizai/zizai_detail.html">
+            <div class="jd_item_list">
+                <div class="img"><img src="" data-imgurl="images/item_1_1.jpg"></div>
+                <p>海南五天四晚高端</p>
+                <span>定制游</span>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- 自在旅行 end -->
+<!-- 特色房屋 -->
+<div class="wrap index_ts">
+    <div class="title">特色房屋<a href="kezhan/fang_list.html">更多</a></div>
+    <p class="ind_tip">不拘一格，给旅行不一样的体验</p>
+    <div class="ts_item_box">
+
+        <div class="ts_item_list">
+            <a class="img" href="kezhan/fang_detail.html">
+                <img src="" data-imgurl="images/item_1.jpg" >
+                <div class="tit">
+                    <p>三亚湾凤凰水城店·舒适园景单卧套房</p>
+                    <span>￥<i>322</i></span>
+                </div>
+            </a>
+
+            <div class="info">
+                <div class="left">
+                    <a href=""><img src="" data-imgurl="images/user.png"></a>
+                </div>
+                
+                <div class="right">                    
+                    <h2>王小明<span>管家推荐</span></h2>
+                    <a href="kezhan/fang_detail.html">
+                        <p>三亚最好的民宿，就像自己家一样舒服，色调比图片更美。</p>
+                    </a>                    
+                </div>                
+            </div>
+        </div>
+
+        <div class="ts_item_list">
+            <a class="img" href="kezhan/fang_detail.html">
+                <img src="" data-imgurl="images/item_1.jpg" >
+                <div class="tit">
+                    <p>三亚湾凤凰水城店·舒适园景单卧套房</p>
+                    <span>￥<i>322</i></span>
+                </div>
+            </a>
+
+            <div class="info">
+                <div class="left">
+                    <a><img src="" data-imgurl="images/user.png"></a>
+                </div>
+                <div class="right">
+                    <h2>王小明<span>管家推荐</span></h2>
+                    <a href="kezhan/fang_detail.html">
+                        <p>三亚最好的民宿，就像自己家一样舒服，色调比图片更美。</p>
+                    </a> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 特色房屋 end -->
+<!-- 联盟商家 -->
+<div class="wrap index_sj">
+    <div class="title">联盟商家<a href="shangjia/business.html">更多</a></div>
+    <p class="ind_tip">不拘一格，给旅行不一样的体验</p>
+    <div class="sj_item_box">
+        <div class="sj_item_box_div">
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>精选水果特产</p>
+                <span>送家人送朋友送同事</span>
+            </a>
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>当地美食</p>
+                <span>颜值口味双赞</span>
+            </a>
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>当地美食</p>
+                <span>颜值口味双赞</span>
+            </a>
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>当地美食</p>
+                <span>颜值口味双赞</span>
+            </a>
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>精选水果特产</p>
+                <span>送家人送朋友送同事</span>
+            </a>
+
+            <a class="sj_item_list" href="shangjia/busi_detail.html">
+                <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+                <p>精选水果特产</p>
+                <span>送家人送朋友送同事</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- 联盟商家 end -->
+<!-- 旅居故事 -->
+<div class="wrap index_lj">
+    <div class="title">旅居故事<a href="gushi/gushi.html">更多</a></div>
+    <p class="ind_tip">在远方等你的，是一个有温度的家</p>
+
+    <a class="lj_item_1" href="gushi/gushi_detail.html">
+        <div class="img"><img src="" data-imgurl="images/item_1.jpg"></div>
+        <div class="info">
+            <p>四季花开,一家四口的童话小院</p>
+            <span>房东故事</span>
+        </div>
+    </a>
+
+    <div class="lj_item_box">
+        <a class="lj_item_list" href="gushi/gushi_detail.html">
+            <div class="info">
+                <p>四季花开,一家四口的童话小院浪漫中充斥着幸福</p>
+                <span>房东故事</span>
+            </div>
+            <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+        </a>
+        
+        <a class="lj_item_list" href="gushi/gushi_detail.html">
+            <div class="info">
+                <p>四季花开,一家四口的童话小院浪漫中充斥着幸福</p>
+                <span>房东故事</span>
+            </div>
+            <div class="img"><img src="" data-imgurl="images/item_2_1.jpg" ></div>
+        </a>
+    </div>
+</div>
+<!-- 旅居故事 end -->
+
+<script type="text/javascript">
+    var aImages = document.getElementsByTagName('img'); //获取id为SB的文档内所有的图片
+    loadImg(aImages);
+    window.onscroll = function() { //滚动条滚动触发
+        loadImg(aImages);
+    };
+    //getBoundingClientRect 是图片懒加载的核心
+    function loadImg(arr) {
+        for(var i = 0, len = arr.length; i < len; i++) {
+            if(arr[i].getBoundingClientRect().top < document.documentElement.clientHeight && !arr[i].isLoad) {
+                arr[i].isLoad = true; //图片显示标志位
+                //arr[i].style.cssText = "opacity: 0;";
+                (function(i) {
+                    setTimeout(function() {
+                        if(arr[i].dataset) { //兼容不支持data的浏览器
+                            aftLoadImg(arr[i], arr[i].dataset.imgurl);
+                        } else {
+                            aftLoadImg(arr[i], arr[i].getAttribute("data-imgurl"));
+                        }
+                        arr[i].style.cssText = "transition: 1s; opacity: 1;"//相当于fadein
+                    }, 100)
+                })(i);
+            }
+        }
+    }
+
+    function aftLoadImg(obj, url) {
+        var oImg = new Image();
+        oImg.onload = function() {
+            obj.src = oImg.src; //下载完成后将该图片赋给目标obj目标对象
+        };
+        oImg.src = url; //oImg对象先下载该图像
+    }
+</script>
+
+</body>
+</html>

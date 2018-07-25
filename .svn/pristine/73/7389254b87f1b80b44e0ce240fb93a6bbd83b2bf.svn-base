@@ -1,0 +1,156 @@
+<html lang="zh-Ch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="zhangzhan" />
+    <title>业主中心-增加资产</title>
+    <link rel="stylesheet" href="../css/com.css">
+    <link rel="stylesheet" href="../css/fang_list.css">
+    <link rel="stylesheet" href="../css/owner.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<div class="wrap tg_online_box add_assets">
+    <a id="selCity">
+        <label>城市</label>
+        <em class="grey">请选择房屋所在城市</em>
+    </a>
+    <a id="selArea">
+        <label>小区名称</label>
+        <em class="grey">请选择您的小区名称</em>
+    </a>
+    <a>
+        <label>门牌</label>
+        <input class="inp" type="text" placeholder="请填写楼栋门牌">
+    </a>
+    <a id="selType">
+        <label>房屋类型</label>
+        <em class="grey">请选择房屋类型</em>
+    </a>
+    <a>
+        <label>房屋面积(㎡)</label>
+        <input class="inp" type="text" placeholder="请填写房屋面积(㎡)">
+    </a>
+    <a id="selTime">
+        <label>购房日期</label>
+        <em class="grey">请选择购房日期</em>
+    </a>
+    <a>
+        <label>购房金额(元)</label>
+        <input class="inp" type="text" placeholder="请填写购房时金额">
+    </a>
+    <a id="selStatus">
+        <label>房屋状态</label>
+        <em class="grey">请选择房屋状态</em>
+    </a>
+</div>
+<div class="withdraw_bottom">
+    <input class="withdraw_btn" type="button" value="完成">
+</div>
+<!-- 选择城市-->
+<div id="departure_place">
+    <div class="wrap city_wrap">
+        <div class="title">海南</div>
+        <div class="sx_lab_box">
+            <span class="on">三亚</span>
+            <span>文昌</span>
+        </div>
+    </div>
+    <div class="wrap city_wrap">
+        <div class="title">云南</div>
+        <div class="sx_lab_box">
+            <span>西双版纳</span>
+            <span>大理</span>
+        </div>
+    </div>
+</div>
+<!-- 选择小区 -->
+<div id="departure_area">
+    <div class="wrap tg_online_box add_assets">
+        <a class="fw_online">
+            <label>金隅丽景园</label>
+        </a>
+        <a class="fw_online selected">
+            <label>首开畅心园</label>
+        </a>
+        <a class="fw_online">
+            <label>中鸿国际商务花园</label>
+        </a>
+        <a class="fw_online">
+            <label>保利嘉园三号院</label>
+        </a>
+        <a class="fw_online">
+            <label>驻欣家园</label>
+        </a>
+    </div>
+</div>
+<!-- 选择类型 -->
+<div class="mask" id="departure_type">
+    <div class="dialog_select">
+        <h2>选择房屋类型</h2>
+        <div class="select_box">
+            <a class="select_list">洋房</a>
+            <a class="select_list">公寓</a>
+            <a class="select_list">别墅</a>
+        </div>
+    </div>
+    <a class="cancer">取消</a>
+</div>
+<!-- 选择状态 -->
+<div class="mask" id="departure_status">
+    <div class="dialog_select">
+        <h2>选择房屋状态</h2>
+        <div class="select_box">
+            <a class="select_list">已售</a>
+            <a class="select_list">出售中</a>
+            <a class="select_list">已下架</a>
+        </div>
+    </div>
+    <a class="cancer">取消</a>
+</div>
+
+<script>
+    $(function () {
+        //选择出发地
+        $("#selCity").bind("click",function(){
+            $("#departure_place").show();
+        });
+        $("#departure_place .sx_lab_box span").bind("click",function(){
+            $("#selCity em").text($(this).text());
+            $("#departure_place").hide();
+
+        });
+        //选择小区
+        $("#selArea").bind("click",function(){
+            $("#departure_area").show();
+        });
+        $("#departure_area .fw_online label").bind("click",function(){
+            $("#selArea em").text($(this).text());
+            $("#departure_area").hide();
+
+        });
+        //选择类型
+        $("#selType").bind("click",function(){
+            $("#departure_type").show();
+        });
+        $("#departure_type .select_list").bind("click",function(){
+            $("#selType em").text($(this).text());
+            $("#departure_type").hide();
+        });
+        //选择状态
+        $("#selStatus").bind("click",function(){
+            $("#departure_status").show();
+        });
+        $("#departure_status .select_list").bind("click",function(){
+            $("#selStatus em").text($(this).text());
+            $("#departure_status").hide();
+        });
+        $('.cancer').click(function () {
+            $("#departure_type").hide();
+            $("#departure_status").hide();
+        });
+    })
+</script>
+</body>
+</html>

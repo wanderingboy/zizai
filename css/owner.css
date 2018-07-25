@@ -1,0 +1,1431 @@
+/*
+* 业主中心
+* 张展
+* 2018-1-25
+*/
+
+/********** page 业主中心 **********/
+/* banner */
+.banner{
+    width:100%;
+    height: 3.6rem;
+    overflow:hidden;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner h2{
+    width: 100%;
+    font-size: 0.36rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.42rem;
+    left: 0;
+}
+/* nav */
+.owner_nav_box{
+    width: 7.14rem;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    margin-left: -0.22rem;
+}
+.owner_nav_list{
+    flex: 1;
+    padding: 0 0.22rem;
+    border-right: 0.01rem solid #e5e5e5;
+}
+.owner_nav_list:last-child{
+    border-right: none;
+}
+.owner_nav_list span{
+    width: 0.96rem;
+    height: 0.96rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.owner_nav_list span.ico_1{
+    background: #dcbe92 url("../images/yezhu/yezhucenter-49.svg") no-repeat center;
+    background-size: 0.54rem;
+}
+.owner_nav_list span.ico_2{
+    background: #dcbe92 url("../images/yezhu/yezhucenter-50.svg") no-repeat center;
+    background-size: 0.54rem;
+}
+.owner_nav_list span.ico_3{
+    background: #dcbe92 url("../images/yezhu/yezhucenter-51.svg") no-repeat center;
+    background-size: 0.54rem;
+}
+.owner_nav_list h2{
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    color: #394043;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.owner_nav_list p{
+    font-size: 0.2rem;
+    color: #9c9fa1;
+    line-height: 0.36rem;
+    margin-top: 0.15rem;
+    text-align: center;
+}
+/* owner_box1 */
+.owner_box1 h2{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 0.36rem;
+}
+.owner_box1 h2 a{
+    font-size: 0.28rem;
+    color: #dcbe92;
+    float: right;
+    padding-left: 0.44rem;
+    background: url("../images/yezhu/yezhucenter-52.svg") no-repeat left center;
+    background-size: 0.36rem;
+}
+.scroll_wrap{
+    width: 100%;
+}
+.scroll_item,.swiper-slide{
+    width: 100%;
+    height: 6.1rem !important;
+}
+.scroll_list{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-slide a{
+    width: 5.38rem;
+    height: 0.96rem;
+    margin: 0.3rem auto 0.3rem 0.65rem;
+    padding: 0.1rem 0.35rem;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    background: url("../images/index-07.svg") no-repeat right 0.2rem center;
+    background-size: 0.28rem;
+}
+.swiper-container{
+	height:6.44rem;
+}
+.swiper-pagination{
+	}
+.swiper-pagination-bullet-active{
+    background: #dcbe92;
+}
+.swiper-slide a label{
+    font-size: 0.28rem;
+    color: #dcbe92;
+    line-height: 0.38rem;
+}
+.swiper-slide a h2{
+    flex: 1;
+    font-size: 0.28rem;
+    color: #394043;
+    line-height: 0.38rem;
+}
+
+/* 新增 */
+.VoteText{
+    font-size: 0.24rem;
+}
+.VoteText em{
+    color: #9c9fa1;
+}
+.VoteSpan{
+    font-size: 0.24rem;
+}
+.VoteSpan em{
+    color: #9c9fa1;
+}
+.VoteValue{
+    width: 0.72rem;
+    margin: 0.3rem auto 0.16rem;
+}
+
+#Demo0, #Demo1, #Demo2{
+    height: 3.6rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    position: relative;
+}
+#VoteMain0, #VoteMain1, #VoteMain2{
+    width: 100%;
+    height: 100%;
+}
+.VoteItem:first-child{
+    width: 1.8rem;
+    position: absolute;
+    left: 1.28rem;
+    bottom: -0.8rem;
+    text-align: center;
+}
+.VoteItem:last-child{
+    width: 1.8rem;
+    position: absolute;
+    left: 3.8rem;
+    bottom: -0.8rem;
+}
+/* 预定须知 */
+.owner_box2{
+    padding: 0 0.4rem;
+}
+.owner_box2 a{
+    display: block;
+    font-size: 0.28em;
+    color: #394043;
+    line-height: 0.88rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.owner_box2 a:last-child{
+    border-bottom: none;
+}
+.owner_box2 em{
+    float: right;
+    margin-right: 0.4rem;
+}
+/* 房屋推荐 */
+.owner_box3{
+    padding-bottom: 0;
+}
+.owner_box3 .title{
+    margin-bottom: 0.2rem;
+}
+.owner_box3_item{
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+}
+.owner_box3_item .img{
+    width: 1.6rem;
+    height: 1.9rem;
+    display: block;
+    overflow: hidden;
+    margin-right: 0.3rem;
+}
+.owner_box3_item .img img{
+    width: 100%;
+}
+.owner_box3_item .info{
+    flex: 1;
+}
+.owner_box3_item .info a.tit{
+    display: block;
+    width: 100%;
+    padding-right: 0.4rem;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.owner_box3_item .info h2{
+    width: 4.4rem;
+    font-size: 0.32rem;
+    color: #394043;
+    line-height: 0.32rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.owner_box3_item .info .p1{
+    overflow: hidden;
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+    color: #394043;
+    margin-top: 0.12rem;
+}
+.owner_box3_item .info .p2{
+    font-size: 0.22rem;
+    line-height: 0.38rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+}
+.owner_box3_item .info .bottom{
+    margin-top: 0.21rem;
+}
+.owner_box3_item .info .bottom a{
+    width: 1.6rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+    float: left;
+    margin-right: 0.2rem;
+    font-size: 0.24rem;
+    color: #394043;
+    border: 0.01rem solid #e5e5e5;
+    background: #f5f5f5;
+    border-radius: 0.24rem;
+    -webkit-border-radius: 0.24rem;
+}
+.owner_box3_item .info .bottom a.pay{
+    background: #dcbe92;
+    color: #fff;
+    border: none;
+}
+/******* page 业主中心 托管  ********/
+.owner_tg{
+    padding-bottom: 1.2rem;
+}
+.owner_tg p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.45rem;
+    padding: 0.1rem 0;
+    text-indent: 2em;
+}
+.owner_tg img{
+    width: 100%;
+    display: block;
+    margin:  0.1rem 0;
+}
+/* 底部按钮 */
+.float_wrap{
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    border-top: 0.01rem solid #e5e5e5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+.float_wrap .call{
+    float: left;
+    width: 2.4rem;
+    height: 100%;
+    text-align: center;
+}
+.float_wrap .call .ico_15{
+    width: 0.44rem;
+    height: 0.44rem;
+    display: inline-block;
+    margin-top: 0.14rem;
+    background: url("../images/kezhan/kezhan-15.svg") no-repeat center;
+    background-size: 100%;
+}
+.float_wrap .call p{
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+    color: #6b7072;
+}
+.float_wrap .pay{
+    float: right;
+    width: 5.1rem;
+    height: 100%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+}
+
+/********* page 业主中心 托管城市 *************/
+.p_tit{
+    width: 100%;
+    line-height: 0.6rem;
+    padding: 0 0.4rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.owner_tg_city{
+    padding: 0.1rem 0.4rem 0;
+}
+.owner_tg_city h2{
+    font-size: 0.32rem;
+    color: #394043;
+    line-height: 0.89rem;
+}
+.owner_tg_city .owner_tg_c_box{
+    width: 100%;
+}
+.owner_tg_city .owner_tg_c_box a{
+    width: 100%;
+    height: 0.89rem;
+    border-top: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    line-height: 0.88rem;
+    align-items: center;
+}
+.owner_tg_city .owner_tg_c_box a span{
+    font-size: 0.28rem;
+    color: #394043;
+    margin-right: 0.1rem;
+}
+.owner_tg_city .owner_tg_c_box a span.city{
+    padding-left: 0.4rem;
+    position: relative;
+}
+.owner_tg_city .owner_tg_c_box a span.city::before{
+    content: '';
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    border-left: 0.02rem solid #e5e5e5;
+    border-bottom: 0.02rem solid #e5e5e5;
+    position: absolute;
+    top: 0.3rem;
+    left: 0;
+}
+.owner_tg_city .owner_tg_c_box a em{
+    flex: 1;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+    text-indent: 0.3rem;
+}
+.owner_tg_city .owner_tg_c_box a i{
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url("../images/user/user-41.svg") no-repeat center;
+    background-size: 100%;
+}
+
+/************** page 业主中心 在线托管 ***************/
+.tg_online_top{
+    padding: 0.25rem 0.4rem;
+    border-top: none;
+    margin-bottom: 0;
+}
+.tg_online_top p{
+    padding-left: 0.6rem;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+    line-height: 0.38rem;
+    background: url("../images/yezhu/yezhucenter-62.svg") no-repeat left top;
+    background-size: 0.45rem;
+}
+.tg_online_box{
+    padding:  0 0.4rem;
+    margin-bottom: 0;
+}
+.tg_online_box a{
+    width: 100%;
+    height: 0.89rem;
+    line-height: 0.88rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    align-items: center;
+}
+.tg_online_box a:last-child{
+    border-bottom: none;
+}
+.tg_online_box a label{
+    font-size: 0.28rem;
+    color: #394043;
+}
+.tg_online_box a em,
+.tg_online_box a input{
+    flex: 1;
+    text-align: right;
+    font-size: 0.28rem;
+    color: #394043;
+    padding-right: 0.4rem;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.tg_online_box a span{
+    flex: 1;
+    text-align: right;
+    font-size: 0.28rem;
+    color: #9c9fa1;
+}
+.tg_online_box a .inp{
+    flex: 1;
+    text-align: right;
+    font-size: 0.28rem;
+    color: #394043;
+    border: none;
+    padding: 0 0.1rem;
+}
+.tg_online_box a .inp::-webkit-input-placeholder{
+    font-size: 0.26rem;
+}
+.tg_online_text{
+    padding: 0.3rem 0.4rem;
+}
+.tg_online_text textarea{
+    width: 100%;
+    line-height: 0.4rem;
+    color: #394043;
+    font-size: 0.26rem;
+    border: none;
+    resize: none;
+}
+.online_btn{
+    width: 100%;
+    height: 0.98rem;
+    line-height: 0.98rem;
+    display: block;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fff;
+    background: #dcbe92;
+    border: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/************** page 业主中心 保值服务进度 ***************/
+.fw_progress_top{
+    padding: 0.3rem 0.4rem;
+    border-top: none;
+}
+.fw_progress_top p{
+    font-size: 0.28rem;
+    color: #9c9fa1;
+}
+.fw_progress_top p span{
+    color: #394043;
+}
+.fw_progress_box{
+    padding: 0 0.4rem;
+}
+.fw_progress_box h2{
+    font-size: 0.28rem;
+    color: #394043;
+    line-height: 0.88rem;
+}
+.fw_progress_box h2 em{
+    float: right;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.fw_progress_item{
+    padding: 0.3rem 0;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.fw_progress_list{
+    width: 100%;
+    height: 3.76rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+.fw_progress_list img{
+    width: 100%;
+}
+.fw_progress_list span{
+    width: 1.2rem;
+    height: 0.6rem;
+    display: block;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #fff;
+    background: #dcbe92;
+    border-radius: 0 0.3rem 0.3rem 0;
+    -webkit-border-radius: 0 0.3rem 0.3rem 0;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+.fw_progress_list:last-child{
+    margin-bottom: 0;
+}
+.fw_progress_box .more{
+    width: 100%;
+    line-height: 0.72rem;
+    text-align: center;
+}
+.fw_progress_box .more a{
+    font-size: 0.24rem;
+    color: #dcbe92;
+}
+/************** page 业主中心 保值进度详情 ***************/
+.fw_pro_detail_top{
+    padding: 0 0.4rem;
+    height: 0.89rem;
+    border-top: none;
+}
+.fw_pro_nav{
+    width: 100%;
+    height: 0.89rem;
+    padding: 0 0.72rem;
+    float: left;
+    font-size: 0;
+    text-align: center;
+}
+.fw_pro_nav a{
+    width: 1.68rem;
+    line-height: 0.87rem;
+    font-size: 0.28rem;
+    color: #394043;
+    margin: 0 0.46rem;
+    display: inline-block;
+}
+.fw_pro_nav a.on{
+    color: #dcbe92;
+    border-bottom: 0.02rem solid #dcbe92;
+}
+.fw_pro_detail h2{
+    font-size: 0.32rem;
+}
+.fw_pro_detail .fw_progress_item{
+    border-top: none;
+    padding-top: 0;
+}
+.fw_pro_detail_item{
+    width: 6.91rem;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+}
+.fw_pro_detail_item .img{
+    width: 2.1rem;
+    height: 1.6rem;
+    float: left;
+    margin: 0 0.2rem 0.2rem 0;
+    overflow: hidden;
+}
+.fw_pro_detail_item .img img{
+    width: 100%;
+}
+/************** page 业主中心 收入明细 空 ***************/
+.income_wrap_no{
+    width: 100%;
+    overflow: hidden;
+}
+.income_wrap_no .income_no{
+    width: 3.4rem;
+    height: 2.84rem;
+    display: block;
+    margin: 3.2rem auto 0;
+    background: url("../images/yezhu/income_no.png") no-repeat center;
+    background-size: 100%;
+}
+.income_wrap_no h2{
+    font-size: 0.42rem;
+    color: #394043;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+.income_wrap_no p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.36rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+/************** page 业主中心 收入明细 列表 ***************/
+.income_wrap{
+    padding: 0 0.4rem;
+    margin-top: 0.2rem;
+}
+.income_list{
+    padding: 0.25rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.income_list:last-child{
+    border-bottom: none;
+}
+.income_list .income_info{
+    flex: 1;
+    padding-right: 0.3rem;
+}
+.income_list .income_info h2{
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #394043;
+}
+.income_list .income_info p{
+    font-size: 0.24rem;
+    line-height: 0.32rem;
+    color: #9c9fa1;
+    margin-top: 0.06rem;
+}
+.income_list span{
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    color: #394043;
+}
+/************** page 业主中心 在线预约 ***************/
+.fw_online_top{
+    padding: 0.3rem 0.4rem;
+    border-top: none;
+}
+.fw_online_top p{
+    font-size: 0.32rem;
+    line-height: 0.46rem;
+    text-align: center;
+    color: #394043;
+}
+.tg_online_box .fw_online label{
+    flex: 1;
+}
+.tg_online_box a .check{
+    width: 0.44rem;
+    height: 0.44rem;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+.tg_online_box a .check:checked{
+    background: url("../images/yezhu/yezhucenter-54.svg") no-repeat center;
+    background-size: 100%;
+}
+/************** page 业主中心 提现 ***************/
+.withdraw_top{
+    padding-bottom: 0;
+}
+.withdraw_top h2{
+    font-size: 0.28rem;
+    color: #394043;
+    line-height: 0.28rem;
+}
+.withdraw_top .withdraw_money{
+    width: 100%;
+    height: 1.12rem;
+    padding: 0.2rem 0;
+    border-bottom: 0.01rem solid #e5e5e5;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    align-items: center;
+}
+.withdraw_top .withdraw_money label{
+    font-size: 0.72rem;
+    line-height: 0.72rem;
+    color: #394043;
+    padding-right: 0.2rem;
+}
+.withdraw_top .withdraw_money .inp{
+    flex: 1;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    font-size: 0.72rem;
+    border: none;
+}
+.withdraw_top .withdraw_money .inp::-webkit-input-placeholder{
+    font-size: 0.24rem;
+}
+.withdraw_top p{
+    width: 100%;
+    height: 0.63rem;
+    line-height: 0.58rem;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+.withdraw_bottom{
+    padding:  0.2rem 0.4rem;
+    overflow: hidden;
+}
+.withdraw_bottom p.withdraw_tip{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    line-height: 0.34rem;
+}
+.withdraw_bottom .withdraw_btn{
+    width: 100%;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+    border: none;
+    display: block;
+    border-radius: 0.48rem;
+    -webkit-border-radius: 0.48rem;
+    margin-top: 0.76rem;
+}
+/************** page 业主中心 提现成功 ***************/
+/* 成功弹窗 */
+.dialog{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    background: rgba(0,0,0,0.5);
+}
+.dialog_box{
+    width: 6.7rem;
+    /*height: 4.9rem;*/
+    padding: 0 0.3rem 0.6rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.6rem;
+    left: 0.4rem;
+    overflow: hidden;
+}
+.dialog_box .ico_success{
+    width: 1.16rem;
+    height: 1.16rem;
+    display: block;
+    margin: 0.58rem auto 0;
+    background: url("../images/shangjia/lmshangjia-27.svg") no-repeat center;
+    background-size: 100%;
+}
+.dialog_box h2{
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.48rem;
+    margin-top: 0.3rem;
+    color: #394043;
+}
+.dialog_box p{
+    padding: 0 0.3rem;
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    line-height: 0.38rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
+.dialog_btn{
+    text-align: center;
+    margin-top: 0.4rem;
+    overflow: hidden;
+    font-size: 0;
+}
+.dialog_btn .sure{
+    width: 2.2rem;
+    line-height: 0.88rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #6b7072;
+    border-radius: 0.44rem;
+    -webkit-border-radius: 0.44rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+}
+.dialog_btn .close{
+    width: 3.4rem;
+    line-height: 0.88rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+    border-radius: 0.44rem;
+    -webkit-border-radius: 0.44rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+}
+/************** page 业主中心 增加资产 ***************/
+.tg_online_box .grey{
+    color: #9c9fa1;
+}
+.add_assets{
+    margin-top: 0.2rem;
+}
+/************** page 业主中心 选择房屋类型 ***************/
+/* 选择证件类型弹窗 */
+.mask{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.mask .dialog_select{
+    width: 100%;
+    padding: 0.2rem 0.4rem 0.4rem;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 1.2rem;
+    border-top: 0.01rem solid #e5e5e5;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.mask .dialog_select h2{
+    font-size: 0.36rem;
+    color: #394043;
+    line-height: 0.76rem;
+    text-align: center;
+}
+.select_box{
+    overflow: hidden;
+}
+.select_box .select_list{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.86rem;
+    text-align: center;
+    display: block;
+    font-size: 0.32rem;
+    color: #394043;
+    background: #f5f5f5;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    margin-top: 0.2rem;
+}
+.mask .cancer{
+    width: 100%;
+    height: 0.99rem;
+    line-height: 0.98rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #394043;
+    display: block;
+    border-top: 0.01rem solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/************** page 业主中心 选择小区 ***************/
+.tg_online_box .selected{
+    background: url("../images/yezhu/yezhucenter-53.svg") no-repeat right center;
+    background-size: 0.32rem;
+}
+/************** page 业主中心 暂无房产 ***************/
+/* 未找到房源 */
+.fang_list_no{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.8rem 0 0.3rem;
+}
+.fang_list_no img{
+    width: 100%;
+}
+.fang_list_no h2{
+    font-size: 0.42rem;
+    color: #394043;
+    margin-top: 0.3rem;
+}
+.fang_list_no p{
+    font-size: 0.26rem;
+    color: #9c9fa1;
+    margin-top: 0.2rem;
+}
+/************** page 业主中心 账单列表 ***************/
+.bill_wrap{
+    padding: 0 0.4rem;
+    margin-bottom: 0;
+}
+.bill_box a{
+    overflow: hidden;
+    padding: 0.3rem 0 0.3rem 0.5rem;
+    display: block;
+    border-top: 0.01rem solid #e5e5e5;
+}
+.bill_box a:first-child{
+    border-bottom: none;
+}
+.bill_box a.ico_1{
+    background: url("../images/yezhu/yezhucenter-57.svg") no-repeat left top 0.25rem;
+    background-size: 0.34rem;
+}
+.bill_box a.ico_2{
+    background: url("../images/yezhu/yezhucenter-58.svg") no-repeat left top 0.25rem;
+    background-size: 0.34rem;
+}
+.bill_box a.ico_3{
+    background: url("../images/yezhu/yezhucenter-59.svg") no-repeat left top 0.25rem;
+    background-size: 0.34rem;
+}
+.bill_box a.ico_4{
+    background: url("../images/yezhu/yezhucenter-60.svg") no-repeat left top 0.25rem;
+    background-size: 0.34rem;
+}
+.bill_box a .left{
+    float: left;
+    width: 4.5rem;
+}
+.bill_box a .left h2{
+    width: 100%;
+    font-size: 0.28rem;
+    color: #394043;
+    line-height: 0.28rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.bill_box a .left h2 label{
+    margin-left: -0.15rem;
+}
+.bill_box a .left p{
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.2rem;
+}
+.bill_box a .right{
+    float: right;
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    color: #ff5848;
+}
+.bill_box a .right .add{
+    color: #394043;
+}
+/************** page 业主中心 账单详情 ***************/
+.bill_detail{
+    padding: 0 0.4rem;
+    margin-top: 0.2rem;
+}
+.bill_detail_top{
+    width: 100%;
+    height: 1.21rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.bill_detail_top h2{
+    display: inline-block;
+    font-size: 0.28rem;
+    line-height: 1.4rem;
+}
+.bill_detail_top span{
+    float: right;
+    font-size: 0.54rem;
+    line-height: 1.2rem;
+    color: #dcbe92;
+}
+.bill_detail_box{
+    padding: 0.25rem 0;
+}
+.bill_detail_box p{
+    width: 100%;
+    line-height: 0.46rem;
+    font-size: 0.26rem;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+}
+.bill_detail_box p label{
+    color: #394043;
+}
+.bill_detail_box p span{
+    color: #9c9fa1;
+}
+/************** page 业主中心 账户余额 ***************/
+.account_top h2{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    line-height: 0.24rem;
+    margin-top: 0.18rem;
+    text-align: center;
+}
+.account_top p{
+    font-size: 0.6rem;
+    line-height: 1rem;
+    color: #dcbe92;
+    text-align: center;
+}
+.account_top a{
+    width: 2.4rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    display: block;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #dcbe92;
+    border: 0.01rem solid #dcbe92;
+    border-radius: 0.32rem;
+    -webkit-border-radius: 0.32rem;
+    margin: 0.15rem auto 0;
+}
+.account_wrap{
+    padding: 0 0.4rem;
+}
+.account_wrap h2.tit{
+    font-size: 0.32rem;
+    color: #394043;
+    line-height: 0.72rem;
+    margin-top: 0.2rem;
+}
+.account_wrap h2.tit a{
+    float: right;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    padding-right: 0.4rem;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+/************** page 业主中心 账户余额 无 ***************/
+.account_wrap h2.tit em{
+    float: right;
+    font-size: 0.24rem;
+    color: #9c9fa1;
+}
+/************** page 业主中心 资产详情 ***************/
+.assets_wrap{
+    padding: 0.53rem 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.assets_top{
+    padding-right: 1.6rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.2rem;
+}
+.assets_top h2{
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #394043;
+    line-height: 0.48rem;
+}
+.assets_top p{
+    font-size: 0.36rem;
+    color: #394043;
+}
+.assets_top a.at{
+    width: 1.4rem;
+    height: 0.48rem;
+    display: block;
+    font-size: 0.24em;
+    line-height: 0.48rem;
+    text-align: center;
+    color: #394043;
+    border: 0.01rem solid #e5e5e5;
+    border-radius: 0.24rem;
+    -webkit-border-radius: 0.24rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.chart img{
+    width: 100%;
+}
+.assets_box{
+    width: 100%;
+    padding: 0.24rem 0;
+}
+.assets_box p{
+    font-size: 0.26rem;
+    line-height: 0.48rem;
+    color: #394043;
+}
+.assets_box p span{
+    color: #9c9fa1;
+}
+.chart_line{
+    width: 100%;
+    height: 4.1rem;
+    overflow: hidden;
+}
+/************** page 业主中心 资产详情 取消关注 ***************/
+.dialog_box .at_cancer{
+    width: 1.14rem;
+    height: 1.14rem;
+    display: block;
+    margin: 0.58rem auto 0;
+    background: url("../images/yezhu/yezhucenter-61.svg") no-repeat center;
+    background-size: 100%;
+}
+/************** page 业主中心 自在币 ***************/
+.bi_wrap{
+    width: 100%;
+    padding: 2.8rem 0.4rem 0.4rem;
+    overflow: hidden;
+}
+.bi_top{
+    width: 6.7rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0.4rem;
+}
+.bi_top a{
+    display: inline-block;
+    font-size: 0.24rem;
+    line-height: 0.30rem;
+    color: #9c9fa1;
+    padding-left: 0.36rem;
+    background: url("../images/yezhu/yezhucenter-56.svg") no-repeat left center;
+    background-size: 0.28rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0;
+}
+.bi_top .ico{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin: 0.4rem auto;
+    text-align: center;
+    background: #dcbe92;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+}
+.bi_top .ico p{
+    font-size: 0.24rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.bi_top .ico span{
+    font-size: 0.48rem;
+    color: #fff;
+}
+.bi_wrap h2.tit{
+    width: 100%;
+    height: 0.16rem;
+    position: relative;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.bi_wrap h2.tit span{
+    width: 1.6rem;
+    height: 0.3rem;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    display: block;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.8rem;
+}
+.bi_wrap .income_list:last-child{
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+/************** page 业主中心 管家 未开通 ***************/
+.gj_no_wrap{
+    overflow: hidden;
+}
+.gj_no_wrap .gj_no{
+    width: 3.8rem;
+    height: 3.1rem;
+    display: block;
+    margin: 3rem auto 0;
+    background: url("../images/yezhu/gj_no.png") no-repeat center;
+    background-size: 100%;
+}
+.gj_no_wrap h2{
+    font-size: 0.42rem;
+    color: #394043;
+    text-align: center;
+    line-height: 0.56rem;
+    margin-top: 0.24rem;
+}
+/************** page 业主中心 管家 无房产 ***************/
+.gj_fang_no{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.gj_fang_no img{
+    width: 100%;
+    margin-top: 2.7rem;
+}
+.gj_fang_no h2{
+    font-size: 0.42rem;
+    color: #394043;
+    margin-top: 0.2rem;
+}
+.gj_fang_no p{
+    font-size: 0.24rem;
+    color: #9c9fa1;
+    margin-top: 0.1rem;
+}
+.gj_fang_no a{
+    width: 5.1rem;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: center;
+    display: block;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #dcbe92;
+    border-radius: 0.48rem;
+    -webkit-border-radius: 0.48rem;
+    margin: 1.2rem auto 0;
+}
+/************** page 业主中心 在线预约 宾客迎送 ***************/
+.online_bk_top{
+    padding: 0.3rem 0.4rem;
+    border-top: none;
+    margin-bottom: 0;
+}
+.online_bk_top p{
+    font-size: 0.32rem;
+    line-height: 0.46rem;
+    text-align: center;
+    color: #394043;
+}
+.online_bk_btn{
+    padding: 0.2rem 0.4rem;
+    text-align: center;
+    font-size: 0;
+}
+.online_bk_btn a{
+    width: 2.4rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    display: inline-block;
+    margin: 0 0.1rem;
+    font-size: 0.28rem;
+    border-radius: 0.36rem;
+    -webkit-border-radius: 0.36rem;
+}
+.online_bk_btn a.ow{
+    color: #fff;
+    background: #dcbe92;
+}
+.online_bk_btn a.cs{
+    color: #dcbe92;
+    border: 0.01rem solid #dcbe92;
+}
+/* float */
+.order_float{
+    width: 100%;
+    height: 0.99rem;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 0.01rem solid #e5e5e5;
+    z-index: 100;
+}
+.order_float .order_float_left{
+    float: left;
+    width: 5.1rem;
+    height: 100%;
+    padding: 0 0.2rem 0 0.4rem;
+    line-height: 0.98rem;
+    background: #fff;
+}
+.order_float_left .total{
+    font-size: 0.32rem;
+    color: #394043;
+    float: left;
+}
+.order_float_left .total em{
+    font-size: 0.26rem;
+    color: #ff5848;
+}
+.order_float_left .total em i{
+    font-size: 0.4rem;
+}
+.order_float .submit{
+    float: right;
+    width: 2.4rem;
+    height: 100%;
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #fff;
+    text-align: center;
+    background: #dcbe92;
+}
+/************** page 业主中心 在线预约 管家服务 ***************/
+.tg_online_box .count{
+    flex: 1;
+    text-align: right;
+    font-size: 0;
+}
+.tg_online_box .count .cut, .tg_online_box .count .add{
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/kezhan/kezhan-19.svg") no-repeat center;
+    background-size: 100%;
+}
+.tg_online_box .count .default{
+    background: url("../images/kezhan/kezhan-19-1.svg") no-repeat center;
+    background-size: 100%;
+}
+.tg_online_box .count .add{
+    background: url("../images/kezhan/kezhan-18.svg") no-repeat center;
+    background-size: 100%;
+}
+.tg_online_box .count span{
+    flex: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2rem;
+}
+/************** page 业主中心 在线预约 维保 ***************/
+.online_wb{
+    margin-bottom: 0.2rem;
+}
+/************** page 业主中心 资产切换 ***************/
+.assets_change_top{
+    padding: 0.3rem 0.4rem;
+    border-top: none;
+}
+.assets_change_top p{
+    font-size: 0.32rem;
+    line-height: 0.46rem;
+    text-align: center;
+    color: #394043;
+    background: url("../images/index-07.svg") no-repeat right center;
+    background-size: 0.28rem;
+}
+.assets_change{
+    padding: 0 0.4rem;
+}
+.assets_change_item a{
+    padding: 0.3rem 0;
+    width: 100%;
+    display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+    display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+    display: flex;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.assets_change_item a:last-child{
+    border-bottom: none;
+}
+.assets_change_item a .img{
+    width: 2.26rem;
+    height: 1.72rem;
+    margin-right: 0.2rem;
+    overflow: hidden;
+}
+.assets_change_item a .img img{
+    width: 100%;
+}
+.assets_change_item a .info{
+    flex: 1;
+}
+.assets_change_item a .info h2{
+    width: 100%;
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    color: #394043;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.2rem;
+}
+.assets_change_item a .info p{
+    font-size: 0.24rem;
+    line-height: 0.38rem;
+    color: #9c9fa1;
+}
+
+/* 2018-1-30 新增弹窗 */
+#departure_place, #departure_area{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #f5f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
